@@ -1,0 +1,379 @@
+/* -------------------------------------- */
+/* ------------- CSS Init -------------- */
+
+/* Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap');
+
+/* CSS Reset */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+header, footer {
+	padding: 1em;
+	background-color: #212121;
+	/* background-color: #484848; */
+}
+
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: white;
+}
+/* ------------ */
+/* End css init */
+
+/* -------------------------------------- */
+/* ------------ Header styles ----------- */
+.header__navLogo {
+	width: 3em;
+}
+
+header nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0.1em 2em 0.1em 2em;
+}
+
+header nav ul {
+	text-decoration: none;
+	display: inline-block;
+	list-style: none;
+}
+
+header nav ul li {
+	display: inline-block;
+	padding: 1em;
+	/* border: solid 1px white; */
+}
+
+header nav a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.15em;
+	font-weight: normal;
+}
+/* ----------------- */
+/* End header styles */
+
+/* -------------------------------------- */
+/* ------------- Main styles ------------ */
+
+/* Portada */
+.portada {
+	padding: 1em;
+	height: 60vh;
+	background-image: url("../img/cover-2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.portada__title {
+	display: block;
+	text-align: center;
+	font-size: 500%;
+	font-weight: bold;
+	color: white;
+}
+
+.portada__subtitle {
+	display: block;
+	text-align: center;
+	font-size: 200%;
+	font-weight: lighter;
+	color: white;
+}
+
+/* Sections */
+.section {
+	display: inline-flex;
+	/* flex-wrap: wrap; */
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	padding: 1em;
+	margin: 1em;
+	/* border: solid 1px black; */
+	/* border-radius: 1em; */
+	box-shadow: 10px 10px 15px lightslategray;
+}
+
+/* Team page grid */
+.teamPageGrid {
+	display: grid;
+	grid-template-columns: 15% 70% 15%;
+	grid-row: auto;
+	column-gap: 1em;
+}
+
+.section__title--text {
+	text-align: center;
+	display: block;
+	font-size: 3em;
+	font-weight: bold;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.section__imgContainer {
+	padding: 2em;
+}
+
+.section__sideParagraph p {
+	padding: 3em;
+	line-height: 2.5em;
+	font-size: 115%;
+	font-style: italic;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.team__skills {
+	padding: 3em;
+	line-height: 2.5em;
+	font-size: 125%;
+	font-weight: lighter;
+}
+
+.section__sideParagraph a {
+	padding: 2em;
+	line-height: 2em;
+	font-size: 115%;
+}
+
+.black {
+	/* background-color: #212121; */
+	background-color: #000000;
+}
+
+.black .section__title--text {
+	color: white;
+}
+
+.black .productContainer__productTitle {
+	color: white;
+}
+
+.black .productCard__title--text {
+	color: white;
+}
+
+.black p, a, span {
+	color: white;
+}
+
+/* .black div p {
+	color: white;
+} */
+
+.black div a {
+	color: white;
+}
+
+.gray {
+	background-color: #eeeeee;
+}
+
+.gray p, a, span {
+	color: black;
+}
+
+.gray .section__title--text {
+	color: black;
+}
+
+.gray .productContainer__productTitle {
+	color: black;
+}
+
+.gray .productCard__title--text {
+	color: black;
+}
+
+.gray li {
+	color: black;
+}
+
+/* Products section */
+.sectionProducts {
+	padding: 1em;
+	margin: 1em;
+	overflow: hidden;
+	/* border: solid 1px black; */
+	/* border-radius: 1em; */
+	box-shadow: 10px 10px 15px lightslategray;
+}
+
+.sectionProducts__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.productCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30%;
+	min-width: 400px;
+	box-shadow: 10px 10px 15px lightslategray;
+	margin: 1em;
+}
+
+.productCard__title {
+	padding: 1em;
+}
+
+.productCard__title--text {
+	font-size: 2em;
+	font-weight: normal;
+	display: block;
+	text-align: center;
+	padding: 1em;
+}
+
+.productCard__img {
+	padding: 2em;
+}
+
+.productCard__text {
+	padding: 1em;
+}
+
+.productCard__text p {
+
+	color: black;
+	text-align: center;
+	padding: 1em;
+	font-weight: lighter;
+	line-height: 1.5em;
+}
+
+.productCard__text a {
+	color: black;
+	text-align: right;
+	padding: 1em;
+	font-weight: normal;
+	line-height: 1.5em;
+}
+
+/* Contact form */
+.formCard {
+	width: 40%;
+	padding: 2em;
+	margin: 1em;
+	align-items: center;
+	box-shadow: 10px 10px 15px lightslategray;
+}
+
+.formCard__row {
+	display: block;
+}
+
+.form__title {
+	display: block;
+	padding-bottom: 0.25em;
+	text-align: left;
+	font-size: 300%;
+	font-weight: bold;
+	color: black;
+}
+
+.form__subTitle {
+	display: block;
+	padding-bottom: 0.5em;
+	margin-bottom: 1em;
+	text-align: left;
+	font-size: 150%;
+	font-weight: normal;
+	color: black;
+}
+
+.formCard__row .contact__form fieldset {
+	padding: 1em;
+}
+
+.formCard__row .contact__form input {
+	display: block;
+	margin: 1em;
+}
+
+.formCard__row .contact__form input#btnSend, input#btnClear {
+	display: inline;
+	padding: 0.5em 1em 0.5em 1em;
+	margin-top: 1em;
+}
+/* --------------- */
+/* End main syles */
+
+/* -------------------------------------- */
+/* ------------- Footer Style ----------- */
+footer {
+	padding: 3em 2em 2em 0;
+}
+
+.footer__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+.footer__row--dytSignature {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: end;
+	align-items: center;
+}
+
+footer a, span, li{
+	color: white;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer ul {
+	list-style: none;
+	margin-left: 2em;
+}
+
+footer li {
+	padding: 0.75em;
+	font-weight: lighter;
+}
+
+.footer__section {
+	display: inline-block;
+	padding: 1em;
+}
+
+.footer__section--Title {
+	display: block;
+	font-size: 1.5rem;
+	padding: 0 0 0.5em 0;
+}
+
+.footer__section--map {
+	display: inline-block;
+}
+
+.footer__dytSignature {
+	font-size: 80%;
+	font-weight: lighter;
+}
+/* ----------------- */
+/* End footer styles */
+
+/* End file */
