@@ -1,13 +1,4 @@
----
-toc:
-  depth_from: 1
-  depth_to: 6
-  ordered: false
----
-<!-- End configs -->
-
 <!-- Init Document -->
----
 # :clipboard: Información del sitio a desarrollar
 ---
 
