@@ -12,10 +12,9 @@ img {
 	max-width: 100%;
 }
 
-header, footer {
+header {
 	padding: 1em;
 	background-color: #212121;
-	/* background-color: #484848; */
 }
 
 /* Fonts from Google Fonts */
@@ -52,11 +51,17 @@ main {
 }
 
 footer {
+	background-color: #212121;
 	grid-area: footer;
+	display: grid;
+	grid-template-columns: 5% 20% 20% 30% 20% 5%;
+	justify-content: center;
+	gap: 1em;
+	padding: 2em;
 }
 
 /* Index page */
-.index_grid {
+.main__indexGrid {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr .5fr .5fr 1fr;
@@ -78,6 +83,8 @@ footer {
 	grid-template-columns: auto;
 	grid-template-rows: auto;
 	gap: 1em;
+	grid-column-start: 2;
+	grid-column-end: 3;
 }
 
 /* ----------------- */
@@ -365,26 +372,14 @@ header nav a {
 
 /* -------------------------------------- */
 /* ------------- Footer Style ----------- */
-footer {
-	padding: 3em 2em 2em 0;
-}
-
-.footer__row {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: flex-start;
-}
-
-.footer__row--dytSignature {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: end;
-	align-items: center;
-}
 
 footer a, span, li{
 	color: white;
+}
+
+footer i {
+	font-size: 20px;
+	margin-bottom: 0;
 }
 
 footer a {
@@ -397,28 +392,44 @@ footer ul {
 }
 
 footer li {
-	padding: 0.75em;
+	padding: 10px;
 	font-weight: lighter;
-}
-
-.footer__section {
-	display: inline-block;
-	padding: 1em;
 }
 
 .footer__section--Title {
 	display: block;
-	font-size: 1.5rem;
-	padding: 0 0 0.5em 0;
+	font-size: 155%;
+	padding: 0 0 10px 0;
 }
 
-.footer__section--map {
-	display: inline-block;
+.footer__nav {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.footer__socialNetworks {
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.footer__contact {
+	grid-column: 4;
+	grid-row: 1;
+}
+
+.footer__map {
+	justify-self: end;
+	grid-column: 5;
+	grid-row: 1;
 }
 
 .footer__dytSignature {
 	font-size: 80%;
 	font-weight: lighter;
+	justify-self: end;
+	grid-column-start: 4;
+	grid-column-end: 6;
+	grid-row: 2;
 }
 /* ----------------- */
 /* End footer styles */
