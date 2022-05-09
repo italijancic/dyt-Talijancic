@@ -1,6 +1,5 @@
 <!-- Init Document -->
 # :rocket: D&T-Talijancic
----
 
 ## Contenido del repositorio
 Este repositorio aloja el proyecto final del curso de **Desarrollo Web** de **Coderhouse**, que estoy realizando. Durante el transcurso del mimos debo ir entregando diferentes trabajos prácticos hasta llegar al armado completo de un sitio web. Todos los TPs se irán alojando en este repositorio para su entrega y evaluación por parte de mi tutora.

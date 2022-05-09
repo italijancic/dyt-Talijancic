@@ -1,11 +1,5 @@
 <!-- Init Document -->
 # :clipboard: Información del sitio a desarrollar
----
-
-## Contenido
-[TOC]
-
----
 
 ## Objeto del documento
 Este archivo, tiene por objeto, presentar la empresa sobre la cual se va a trabajar para realizar el proyecto final del curso de **Desarrollo WEB.** Así como explicar el objeto y la funcionalidad que se persigue en el desarrollo del sitio web y las diferentes secciones que lo compondrán, para alcanzar éstos objetivos.
