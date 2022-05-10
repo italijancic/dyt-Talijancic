@@ -12,6 +12,9 @@
 	<!-- Link Style Sheet -->
 	<link rel="stylesheet" href="../css/styles.css">
 
+	<!-- Boxicons CSS -->
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
 
@@ -95,51 +98,50 @@
 		</section>
 	</main>
 
-
 	<!-- Footer -->
 	<footer>
-		<section class="footer__row">
-			<section class="footer__section">
-				<span class="footer__section--Title">Mapa del sitio</span>
-				<!-- Footer Nav Bar -->
-				<nav class="footer__nav">
-					<ul>
-						<li><a href="../index.html">Home</a></li>
-						<li><a href="./empresa.html">La Empresa</a></li>
-						<li><a href="./productos.html">Productos</a></li>
-						<li><a href="./equipo.html">Equipo</a></li>
-						<li><a href="./contacto.html">Contacto</a></li>
-					</ul>
-				</nav>
-			</section>
-
-			<section class="footer__section">
-				<span class="footer__section--Title">Redes Sociales</span>
-				<ul class="footer__socialNetworksList">
-					<li><a href="https://www.facebook.com/dyt.ingenieria">Facebook</a></li>
-					<li><a href="https://www.instagram.com/dyt.iot/">Instagram</a></li>
-					<li><a href="https://ar.linkedin.com/in/dyt-iot?trk=public_profile_samename-profile">LikedIn</a></li>
-					<li><a href="https://github.com/dytsoluciones">Github</a></li>
+		<!-- 1st row of footer -->
+		<div class="footer__nav">
+			<span class="footer__section--Title">Mapa del sitio</span>
+			<!-- Footer Nav Bar -->
+			<nav>
+				<ul>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./pages/empresa.html">La Empresa</a></li>
+					<li><a href="./pages/productos.html">Productos</a></li>
+					<li><a href="./pages/equipo.html">Equipo</a></li>
+					<li><a href="./pages/contacto.html">Contacto</a></li>
 				</ul>
-			</section>
+			</nav>
+		</div>
 
-			<section class="footer__section">
-				<span class="footer__section--Title">Contacto</span>
-				<ul class="footer__contactList">
-					<li>Email: ingeniería@dytsoluciones.com.ar</li>
-					<li>Tel.: +54 9(03482) - 15317662</li>
-					<li>Dirección: Avellaneda | Santa Fe - Argentina</li>
-				</ul>
-			</section>
+		<div class="footer__socialNetworks">
+			<span class="footer__section--Title">Redes Sociales</span>
+			<ul class="footer__socialNetworksList">
+				<li><i class="bx bxl-facebook-square"></i><a href="https://www.facebook.com/dyt.ingenieria"> Facebook</a></li>
+				<li><i class="bx bxl-instagram"></i><a href="https://www.instagram.com/dyt.iot/"> Instagram</a></li>
+				<li><i class="bx bxl-linkedin-square"></i><a href="https://ar.linkedin.com/in/dyt-iot?trk=public_profile_samename-profile"> LikedIn</a></li>
+				<li><i class="bx bxl-github"></i><a href="https://github.com/dytsoluciones"> Github</a></li>
+			</ul>
+		</div>
 
-			<section class="footer__section--map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6970.734964574503!2d-59.63852158848192!3d-29.124349540685127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1650341476126!5m2!1ses!2sar" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</section>
-		</section>
+		<div class="footer__contact">
+			<span class="footer__section--Title">Contacto</span>
+			<ul class="footer__contactList">
+				<li><i class="bx bxs-envelope"></i> Email: ingeniería@dytsoluciones.com.ar</li>
+				<li><i class="bx bxs-phone"></i> Tel.: +54 9(03482) - 15317662</li>
+				<li><i class="bx bxs-pin"></i> Dirección: Avellaneda | Santa Fe - Argentina</li>
+			</ul>
+		</div>
 
-		<section class="footer__row--dytSignature">
-			<span class="footer__dytSignature">by D&T Soluciones | 2022 © copyright all rights reserved</span>
-		</section>
+		<div class="footer__map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6970.734964574503!2d-59.63852158848192!3d-29.124349540685127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1650341476126!5m2!1ses!2sar" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+
+		<!-- 2nd row of footer -->
+		<div class="footer__dytSignature">
+			<span>by D&T Soluciones | 2022 © copyright all rights reserved</span>
+		</div>
 	</footer>
 
 </body>
