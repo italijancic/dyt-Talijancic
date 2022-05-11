@@ -94,6 +94,19 @@ footer {
 /* Desktop view */
 @media screen and (min-width: 1200px) {
 
+	.section__sideParagraph {
+		width: 40%;
+	}
+
+	.section__imgContainer {
+		width: 60%;
+	}
+
+	.productCard {
+		max-width: 600px;
+		width: 30%;
+	}
+
 	footer {
 		grid-template-columns: 5% 20% 20% 30% 20% 5%;
 		justify-content: center;
@@ -131,6 +144,15 @@ footer {
 		grid-column-start: 2;
 		grid-column-end: 6;
 		grid-row: 2;
+	}
+}
+
+/* Products: Desktop view */
+@media screen and (min-width: 1920px) {
+
+	.productCard {
+		max-width: 550px;
+		width: 30%;
 	}
 }
 
@@ -229,7 +251,7 @@ header nav a {
 	box-shadow: 10px 10px 15px lightslategray;
 }
 
-.products__section--title {
+.section__title--text {
 	text-align: center;
 	display: block;
 	font-size: 3em;
@@ -272,14 +294,15 @@ header nav a {
 	font-weight: lighter;
 }
 
-@media screen and (min-width: 1200px) {
+/* Sections: desktop view */
+/* @media screen and (min-width: 1200px) {
 	.section__sideParagraph {
 		width: 40%;
 	}
 	.section__imgContainer {
 		width: 60%;
 	}
-}
+} */
 
 /* background colors */
 /* ----------------- */
@@ -289,7 +312,7 @@ header nav a {
 	background-color: #000000;
 }
 
-.black .products__section--title {
+.black .section__title-text {
 	color: white;
 }
 
@@ -318,7 +341,7 @@ header nav a {
 	color: black;
 }
 
-.gray .products__section--title {
+.gray .section__title--text {
 	color: black;
 }
 
@@ -355,8 +378,8 @@ header nav a {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 30%;
 	min-width: 400px;
+	width: 100%;
 	box-shadow: 10px 10px 15px lightslategray;
 	margin: 1em;
 }
