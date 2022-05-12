@@ -427,7 +427,8 @@ footer li {
 
 /* @media queries */
 /* -------------- */
-/* Aipad Air */
+
+/* iPad */
 @media screen and (min-width: 820px) {
 
 	.section__imgContainer {
@@ -446,8 +447,9 @@ footer li {
 		font-size: 1.5em;
 	}
 }
-/* Add content on footer */
-@media screen and (min-width: 1200px) {
+
+/* Add content on footer: iPad landscape */
+@media screen and (min-width: 1180px) {
 
 	.section__imgContainer {
 		max-width: 550px;
@@ -460,7 +462,7 @@ footer li {
 	}
 
 	.productCard {
-		max-width: 550px;
+		max-width: 650px;
 	}
 
 	footer {
