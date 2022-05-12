@@ -242,16 +242,20 @@ header nav a {
 	padding-bottom: 0.5em;
 }
 
+.section__imgContainer {
+	max-width: 800px;
+	align-self: center;
+}
+
 .section__sideParagraph {
-	min-width: 200px;
-	max-width: 600px;
+	max-width: 800px;
 	align-self: center;
 }
 
 .section__sideParagraph p {
 	padding: 1em;
-	line-height: 2.5em;
-	font-size: 1.5em;
+	line-height: 1.75em;
+	font-size: 1.15em;
 	font-style: italic;
 	font-weight: lighter;
 	text-align: center;
@@ -259,25 +263,13 @@ header nav a {
 
 .section__sideParagraph a {
 	padding: 1em;
-	line-height: 2em;
-	line-height: 2.25em;
-	font-size: 1.5em;
+	line-height: 1.75em;
+	font-size: 1.15em;
 }
 
-.section__imgContainer {
-	min-width: 200px;
-	max-width: 600px;
-	align-self: center;
-}
-
-.team__skills {
-	padding: 3em;
-	line-height: 2.5em;
-	font-size: 125%;
-	font-weight: lighter;
-}
 
 /* Products section */
+/* ---------------- */
 .sectionProducts {
 	overflow: hidden;
 	padding: 1em;
@@ -321,12 +313,11 @@ header nav a {
 }
 
 .productCard__text p {
-
 	color: black;
 	text-align: center;
 	padding: 1em;
 	font-weight: lighter;
-	font-size: 1.25em;
+	font-size: 1em;
 	line-height: 1.5em;
 }
 
@@ -335,9 +326,19 @@ header nav a {
 	text-align: right;
 	padding: 1em;
 	font-weight: normal;
-	font-size: 1.25em;
+	font-size: 1em;
 	line-height: 1.5em;
 }
+
+
+/* Team page */
+.team__skills {
+	padding: 3em;
+	line-height: 2.5em;
+	font-size: 125%;
+	font-weight: lighter;
+}
+
 
 /* Contact form */
 .formCard {
@@ -426,16 +427,36 @@ footer li {
 
 /* @media queries */
 /* -------------- */
-
-/* Desktop view */
-@media screen and (min-width: 1200px) {
+/* Aipad Air */
+@media screen and (min-width: 820px) {
 
 	.section__imgContainer {
-		max-width: 900px;
+		max-width: 750px;
 	}
 
 	.section__sideParagraph {
-		max-width: 900px;
+		max-width: 750px;
+	}
+
+	.productCard {
+		max-width: 550px;
+	}
+
+	.productCard__text {
+		font-size: 1.5em;
+	}
+}
+/* Add content on footer */
+@media screen and (min-width: 1200px) {
+
+	.section__imgContainer {
+		max-width: 550px;
+	}
+
+	.section__sideParagraph {
+		max-width: 550px;
+		/* line-height: 2.5em;
+		font-size: 1.5em; */
 	}
 
 	.productCard {
@@ -479,9 +500,40 @@ footer li {
 	}
 }
 
-@media screen and (min-width: 2000px) {
+/* Full HD resolution */
+ @media screen and (min-width: 1920px) {
+
+	.section__imgContainer {
+		max-width: 900px;
+	}
+
+	.section__sideParagraph {
+		max-width: 800px;
+		line-height: 2.5em;
+		font-size: 1.25em;
+	}
+
 	.productCard {
-		max-width: 700px;
+		max-width: 550px;
+	}
+
+}
+
+/* UDH Monitors */
+@media screen and (min-width: 2200px) {
+
+	.section__imgContainer {
+		max-width: 900px;
+	}
+
+	.section__sideParagraph {
+		max-width: 900px;
+		line-height: 2.5em;
+		font-size: 1.5em;
+	}
+
+	.productCard {
+		max-width: 750px;
 	}
 
 }
