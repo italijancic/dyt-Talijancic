@@ -261,30 +261,33 @@ header nav a {
 }
 
 .section__sideParagraph {
-	width: 100%;
+	width: 40%;
 	min-width: 450px;
 	max-width: 900px;
+	align-self: center;
 }
 
 .section__sideParagraph p {
 	padding: 1em;
-	line-height: 2.25em;
-	font-size: 115%;
+	line-height: 2.5em;
+	font-size: 1.5em;
 	font-style: italic;
 	font-weight: lighter;
 	text-align: center;
 }
 
 .section__sideParagraph a {
-	padding: 2em;
+	padding: 1em;
 	line-height: 2em;
-	font-size: 115%;
+	line-height: 2.25em;
+	font-size: 1.5em;
 }
 
 .section__imgContainer {
-	width: 100%;
+	width: 60%;
 	min-width: 450px;
 	max-width: 900px;
+	align-self: center;
 }
 
 .team__skills {
@@ -410,6 +413,7 @@ header nav a {
 	text-align: center;
 	padding: 1em;
 	font-weight: lighter;
+	font-size: 1.25em;
 	line-height: 1.5em;
 }
 
@@ -418,6 +422,7 @@ header nav a {
 	text-align: right;
 	padding: 1em;
 	font-weight: normal;
+	font-size: 1.25em;
 	line-height: 1.5em;
 }
 
