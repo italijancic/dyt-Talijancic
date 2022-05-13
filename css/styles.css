@@ -109,8 +109,8 @@ footer {
 	display: grid;
 	grid-template-columns: 5% 45% 45% 5%;
 	justify-content: center;
-	gap: 1em;
-	padding: 2em;
+	gap: 0.5em;
+	padding: 1em;
 }
 
 .footer__nav {
@@ -145,10 +145,10 @@ footer {
 /* Team page */
 .teamPageGrid {
 	display: grid;
-	grid-template-columns: .15fr .7fr .15fr;
+	grid-template-columns: 0% 100% 0%;
 	grid-row: auto;
-	gap: 1em;
-	padding: 1em;
+	/* gap: 1em; */
+	/* padding: 1em; */
 }
 
 .teamCards__grid {
@@ -174,17 +174,17 @@ footer {
 	margin: 0.1em 2em 0.1em 2em;
 }
 
-.hamb__menu--items {
+.hamb__items {
 	display: none;
 	list-style: none;
 }
 
-.hamb__menu--items li {
+.hamb__items li {
 	display: block;
 	padding: 1em;
 }
 
-.hamb__menu--items li a {
+.hamb__items li a {
 	text-decoration: none;
 	color: white;
 	font-size: 1.15em;
@@ -208,7 +208,7 @@ footer {
 	user-select: none;
 }
 
-.hamb__nav input:checked~.hamb__menu--items {
+.hamb__nav input:checked~.hamb__items {
 	display: block;
 	position: fixed;
 	top: 5em;
@@ -223,11 +223,11 @@ footer {
 		display: none;
 	}
 
-	.hamb__menu--items {
+	.hamb__items {
 		display: block;
 	}
 
-	.hamb__menu--items li {
+	.hamb__items li {
 		display: inline-block;
 		padding: 1em;
 	}
@@ -440,7 +440,7 @@ footer a, span, li{
 }
 
 footer i {
-	font-size: 20px;
+	font-size: 1em;
 	margin-bottom: 0;
 }
 
@@ -454,14 +454,18 @@ footer ul {
 }
 
 footer li {
-	padding: 10px;
+	padding: 0.4em;
 	font-weight: lighter;
 }
 
 .footer__section--Title {
 	display: block;
-	font-size: 155%;
-	padding: 0 0 10px 0;
+	font-size: 1.3em;
+	padding: 0 0 0.5em 0;
+}
+
+.footer__dytSignature span {
+	font-size: 0.9em;
 }
 /* ----------------- */
 /* End footer styles */
@@ -479,6 +483,13 @@ footer li {
 
  /* iPad: min-width: 820px */
 @media screen and (min-width: 51.25em) {
+
+	/* Team page */
+	.teamPageGrid {
+		display: grid;
+		grid-template-columns: 5% 90% 5%;
+		grid-row: auto;
+	}
 
 	.section__imgContainer {
 		max-width: 750px;
@@ -499,6 +510,12 @@ footer li {
 
 /* Add content on footer: iPad landscape --> min-width: 1180px */
 @media screen and (min-width: 73.75em) {
+
+	.teamPageGrid {
+		display: grid;
+		grid-template-columns: 15% 70% 15%;
+		grid-row: auto;
+	}
 
 	.section__imgContainer {
 		max-width: 550px;
@@ -545,7 +562,6 @@ footer li {
 	}
 
 	.footer__dytSignature {
-		font-size: 80%;
 		font-weight: lighter;
 		justify-self: end;
 		grid-column-start: 2;
