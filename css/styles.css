@@ -161,11 +161,12 @@ footer {
 
 /* ------------- */
 /* Header styles */
+
 .header__navLogo {
 	width: 3em;
 }
 
-header nav {
+.hamb__nav {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -173,24 +174,61 @@ header nav {
 	margin: 0.1em 2em 0.1em 2em;
 }
 
-header nav ul {
-	text-decoration: none;
-	display: inline-block;
+.hamb__menu--items {
+	display: none;
 	list-style: none;
 }
 
-header nav ul li {
-	display: inline-block;
+.hamb__menu--items li {
+	display: block;
 	padding: 1em;
-	/* border: solid 1px white; */
 }
 
-header nav a {
+.hamb__menu--items li a {
 	text-decoration: none;
 	color: white;
 	font-size: 1.15em;
 	font-weight: normal;
 }
+
+/* Hambuger menu: mobile first */
+
+/* Hide check box */
+#hamburger {
+	display: none;
+}
+
+/* Show hamburger icon */
+.hamb__btn {
+	display: inline-block;
+	color: white;
+	font-size: 2em;
+	font-style: normal;
+	padding: 0;
+	user-select: none;
+}
+
+.hamb__nav input:checked~.hamb__menu--items {
+	display: block;
+}
+
+/* For desktop view: min-width: 768px = 48em */
+@media screen and (min-width: 48em) {
+
+	.hamb__btn {
+		display: none;
+	}
+
+	.hamb__menu--items {
+		display: block;
+	}
+
+	.hamb__menu--items li {
+		display: inline-block;
+		padding: 1em;
+	}
+}
+
 /* ----------------- */
 /* End header styles */
 
