@@ -428,8 +428,15 @@ footer li {
 /* @media queries */
 /* -------------- */
 
-/* iPad */
-@media screen and (min-width: 820px) {
+/*
+ * NOTE:
+ *		Express all @medias on em (units)
+ *		1em = 16px. To use relative units and avoid
+ *		problems on screen with differents density of pixels
+ */
+
+ /* iPad: min-width: 820px */
+@media screen and (min-width: 51.25em) {
 
 	.section__imgContainer {
 		max-width: 750px;
@@ -448,8 +455,8 @@ footer li {
 	}
 }
 
-/* Add content on footer: iPad landscape */
-@media screen and (min-width: 1180px) {
+/* Add content on footer: iPad landscape --> min-width: 1180px */
+@media screen and (min-width: 73.75em) {
 
 	.section__imgContainer {
 		max-width: 550px;
@@ -505,8 +512,8 @@ footer li {
 	}
 }
 
-/* Full HD resolution */
- @media screen and (min-width: 1920px) {
+/* Full HD resolution: min-width:1920px */
+ @media screen and (min-width: 120em) {
 
 	.section__imgContainer {
 		max-width: 900px;
@@ -529,8 +536,8 @@ footer li {
 
 }
 
-/* UDH Monitors */
-@media screen and (min-width: 2200px) {
+/* UDH Monitors: min-width: 2200px */
+@media screen and (min-width: 137.5em) {
 
 	.section__imgContainer {
 		max-width: 900px;
