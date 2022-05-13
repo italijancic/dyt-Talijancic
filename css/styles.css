@@ -457,8 +457,6 @@ footer li {
 
 	.section__sideParagraph {
 		max-width: 550px;
-		/* line-height: 2.5em;
-		font-size: 1.5em; */
 	}
 
 	.productCard {
@@ -492,6 +490,11 @@ footer li {
 		grid-row: 1;
 	}
 
+	.footer__map iframe {
+		width: 200px;
+		height: 200px;
+	}
+
 	.footer__dytSignature {
 		font-size: 80%;
 		font-weight: lighter;
@@ -519,6 +522,11 @@ footer li {
 		max-width: 550px;
 	}
 
+	.footer__map iframe {
+		width: 300px;
+		height: 200px;
+	}
+
 }
 
 /* UDH Monitors */
@@ -536,6 +544,11 @@ footer li {
 
 	.productCard {
 		max-width: 750px;
+	}
+
+	.footer__map iframe {
+		width: 400px;
+		height: 220px;
 	}
 
 }
