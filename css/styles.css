@@ -147,8 +147,6 @@ footer {
 	display: grid;
 	grid-template-columns: 0% 100% 0%;
 	grid-row: auto;
-	/* gap: 1em; */
-	/* padding: 1em; */
 }
 
 .teamCards__grid {
@@ -278,10 +276,10 @@ footer {
 .section__title--text {
 	text-align: center;
 	display: block;
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: bold;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
 }
 
 .section__imgContainer {
@@ -339,7 +337,7 @@ footer {
 }
 
 .productCard__title--text {
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: normal;
 	display: block;
 	text-align: center;
@@ -372,15 +370,13 @@ footer {
 	line-height: 1.5em;
 }
 
-
 /* Team page */
 .team__skills {
-	padding: 1em;
-	line-height: 2.5em;
-	font-size: 125%;
+	padding: 1em 1em 1em 2em;
+	line-height: 1.75em;
+	font-size: 1em;
 	font-weight: lighter;
 }
-
 
 /* Contact form */
 .formCard {
@@ -511,10 +507,28 @@ footer li {
 /* Add content on footer: iPad landscape --> min-width: 1180px */
 @media screen and (min-width: 73.75em) {
 
+	.section__title--text {
+		font-size: 3em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+
+	.productCard__title--text {
+		font-size: 2em;
+	}
+
 	.teamPageGrid {
 		display: grid;
 		grid-template-columns: 15% 70% 15%;
 		grid-row: auto;
+	}
+
+	.teamPageGrid .teamCards__grid .section__imgContainer {
+		max-width: 300px;
+	}
+
+	.teamPageGrid .teamCards__grid .section__sideParagraph {
+		max-width: 400px;
 	}
 
 	.section__imgContainer {
@@ -572,6 +586,14 @@ footer li {
 
 /* Full HD resolution: min-width:1920px */
  @media screen and (min-width: 120em) {
+
+	.teamPageGrid .teamCards__grid .section__imgContainer {
+		max-width: 750px;
+	}
+
+	.teamPageGrid .teamCards__grid .section__sideParagraph {
+		max-width: 750px;
+	}
 
 	.section__imgContainer {
 		max-width: 900px;
