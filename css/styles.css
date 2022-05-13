@@ -210,6 +210,10 @@ footer {
 
 .hamb__nav input:checked~.hamb__menu--items {
 	display: block;
+	position: fixed;
+	top: 5em;
+    right: 0;
+	background-color: #212121;
 }
 
 /* For desktop view: min-width: 768px = 48em */
