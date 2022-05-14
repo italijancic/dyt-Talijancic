@@ -380,7 +380,7 @@ footer {
 
 /* Contact form */
 .formCard {
-	width: 40%;
+	width: 370px;
 	padding: 2em;
 	margin: 1em;
 	align-items: center;
@@ -417,6 +417,11 @@ footer {
 .formCard__row .contact__form input {
 	display: block;
 	margin: 1em;
+}
+
+.formCard__row textarea {
+	width: 275px;
+	height: 200px;
 }
 
 .formCard__row .contact__form input#btnSend, input#btnClear {
@@ -477,10 +482,18 @@ footer li {
  *		problems on screen with differents density of pixels
  */
 
- /* iPad: min-width: 820px */
-@media screen and (min-width: 51.25em) {
+ /* Tablet: min-width: 768px */
+@media screen and (min-width: 48em) {
 
-	/* Team page */
+	.formCard {
+		width: 550px;
+	}
+
+	.formCard__row textarea {
+		width: 450px;
+		height: 320px;
+	}
+
 	.teamPageGrid {
 		display: grid;
 		grid-template-columns: 5% 90% 5%;
@@ -504,8 +517,17 @@ footer li {
 	}
 }
 
-/* Add content on footer: iPad landscape --> min-width: 1180px */
-@media screen and (min-width: 73.75em) {
+/* Add content on footer: Laptop --> min-width: 1024px */
+@media screen and (min-width: 64em) {
+
+	.formCard {
+		width: 600px;
+	}
+
+	.formCard__row textarea {
+		width: 500px;
+		height: 250px;
+	}
 
 	.section__title--text {
 		font-size: 3em;
@@ -587,6 +609,15 @@ footer li {
 /* Full HD resolution: min-width:1920px */
  @media screen and (min-width: 120em) {
 
+	.formCard {
+		width: 800px;
+	}
+
+	.formCard__row textarea {
+		width: 700px;
+		height: 200px;
+	}
+
 	.teamPageGrid .teamCards__grid .section__imgContainer {
 		max-width: 750px;
 	}
@@ -618,6 +649,15 @@ footer li {
 
 /* UDH Monitors: min-width: 2200px */
 @media screen and (min-width: 137.5em) {
+
+	.formCard {
+		width: 900px;
+	}
+
+	.formCard__row textarea {
+		width: 800px;
+		height: 550px;
+	}
 
 	.section__imgContainer {
 		max-width: 900px;
