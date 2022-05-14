@@ -622,9 +622,28 @@ footer li {
 	}
 }
 
+/* Laptop L: 1440px */
+ @media screen and (min-width: 90em) {
+
+	.section__imgContainer {
+		max-width: 700px;
+	}
+
+	.section__sideParagraph {
+		max-width: 600px;
+		line-height: 2.5em;
+		font-size: 1.25em;
+	}
+
+	.productCard {
+		max-width: 420px;
+	}
+
+
+ }
+
 /* Full HD resolution: min-width:1920px */
  @media screen and (min-width: 120em) {
-
 
 	.formCard {
 		width: 800px;
@@ -685,11 +704,11 @@ footer li {
 	}
 
 	.section__imgContainer {
-		max-width: 900px;
+		max-width: 1000px;
 	}
 
 	.section__sideParagraph {
-		max-width: 900px;
+		max-width: 1000px;
 		line-height: 2.5em;
 		font-size: 1.5em;
 	}
