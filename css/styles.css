@@ -380,7 +380,7 @@ footer {
 
 /* Contact form */
 .formCard {
-	width: 370px;
+	width: 340px;
 	padding: 2em;
 	margin: 1em;
 	align-items: center;
@@ -420,7 +420,7 @@ footer {
 }
 
 .formCard__row textarea {
-	width: 275px;
+	width: 250px;
 	height: 200px;
 }
 
@@ -630,16 +630,18 @@ footer li {
 	}
 
 	.section__sideParagraph {
-		max-width: 600px;
-		line-height: 2.5em;
-		font-size: 1.25em;
+		max-width: 700px;
+		line-height: 2em;
+		font-size: 1.05em;
 	}
 
 	.productCard {
 		max-width: 420px;
 	}
 
-
+	.productCard__text {
+		font-size: 1em;
+	}
  }
 
 /* Full HD resolution: min-width:1920px */
