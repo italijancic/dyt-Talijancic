@@ -251,7 +251,7 @@ footer {
 .portada__title {
 	display: block;
 	text-align: center;
-	font-size: 500%;
+	font-size: 2.5em;
 	font-weight: bold;
 	color: white;
 }
@@ -259,17 +259,18 @@ footer {
 .portada__subtitle {
 	display: block;
 	text-align: center;
-	font-size: 200%;
+	font-size: 1.25em;
 	font-weight: lighter;
 	color: white;
 }
 
 /* Sections */
+/* -------- */
 .section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin: 1em 2em 1em 2em;
+	margin: 1em 1em 1em 1em;
 	box-shadow: 10px 10px 15px lightslategray;
 }
 
@@ -307,13 +308,12 @@ footer {
 	font-size: 1.15em;
 }
 
-
 /* Products section */
 /* ---------------- */
 .sectionProducts {
 	overflow: hidden;
 	padding: 1em;
-	margin: 1em 2em 1em 2em;
+	margin: 1em 1em 1em 1em;
 	box-shadow: 10px 10px 15px lightslategray;
 }
 
@@ -485,6 +485,14 @@ footer li {
  /* Tablet: min-width: 768px */
 @media screen and (min-width: 48em) {
 
+	.portada__title {
+		font-size: 3em;
+	}
+
+	.portada__subtitle {
+		font-size: 2em;
+	}
+
 	.formCard {
 		width: 550px;
 	}
@@ -520,6 +528,14 @@ footer li {
 /* Add content on footer: Laptop --> min-width: 1024px */
 @media screen and (min-width: 64em) {
 
+	.portada__title {
+		font-size: 5em;
+	}
+
+	.portada__subtitle {
+		font-size: 3em;
+	}
+
 	.formCard {
 		width: 600px;
 	}
@@ -554,11 +570,11 @@ footer li {
 	}
 
 	.section__imgContainer {
-		max-width: 550px;
+		max-width: 450px;
 	}
 
 	.section__sideParagraph {
-		max-width: 550px;
+		max-width: 450px;
 	}
 
 	.productCard {
@@ -609,6 +625,7 @@ footer li {
 /* Full HD resolution: min-width:1920px */
  @media screen and (min-width: 120em) {
 
+
 	.formCard {
 		width: 800px;
 	}
@@ -647,8 +664,16 @@ footer li {
 
 }
 
-/* UDH Monitors: min-width: 2200px */
-@media screen and (min-width: 137.5em) {
+/* UDH Monitors: min-width: 2560px */
+@media screen and (min-width: 160em) {
+
+	.portada__title {
+		font-size: 5em;
+	}
+
+	.portada__subtitle {
+		font-size: 3em;
+	}
 
 	.formCard {
 		width: 900px;
