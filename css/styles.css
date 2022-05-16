@@ -1,0 +1,731 @@
+/* Css Init */
+/* -------- */
+
+/* CSS Reset */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	padding: 1em;
+	background-color: #212121;
+}
+
+/* Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap');
+/* ------------ */
+/* End css init */
+
+/* background colors */
+/* ----------------- */
+
+/* black */
+.black {
+	background-color: #000000;
+}
+
+.black .section__title-text {
+	color: white;
+}
+
+.black .productContainer__productTitle {
+	color: white;
+}
+
+.black .productCard__title--text {
+	color: white;
+}
+
+.black p, a, span {
+	color: white;
+}
+
+.black div a {
+	color: white;
+}
+
+/* gray */
+.gray {
+	background-color: #eeeeee;
+}
+
+.gray p, a, span {
+	color: black;
+}
+
+.gray .section__title--text {
+	color: black;
+}
+
+.gray .productContainer__productTitle {
+	color: black;
+}
+
+.gray .productCard__title--text {
+	color: black;
+}
+
+.gray li {
+	color: black;
+}
+/* --------------------- */
+/* End background colors */
+
+/* Grids Layouts */
+/* ------------- */
+
+/* General */
+body {
+	display: grid;
+	grid-template-areas: 	"header"
+							"main"
+							"footer";
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: white;
+}
+
+header {
+	grid-area: header;
+}
+
+header nav {
+	grid-area: nav;
+}
+
+main {
+	grid-area: main;
+}
+
+/* Footer: Mobile first grid */
+footer {
+	background-color: #212121;
+	grid-area: footer;
+	display: grid;
+	grid-template-columns: 5% 45% 45% 5%;
+	justify-content: center;
+	gap: 0.5em;
+	padding: 1em;
+}
+
+.footer__nav {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.footer__socialNetworks {
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.footer__contact {
+	display: none;
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.footer__map {
+	display: none;
+}
+
+.footer__dytSignature {
+	font-size: 80%;
+	font-weight: lighter;
+	justify-self: end;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row: 2;
+}
+
+/* Team page */
+.teamPageGrid {
+	display: grid;
+	grid-template-columns: 0% 100% 0%;
+	grid-row: auto;
+}
+
+.teamCards__grid {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+/* ----------------- */
+/* End grids layouts */
+
+/* ------------- */
+/* Header styles */
+
+.header__navLogo {
+	width: 3em;
+}
+
+.hamb__nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0.1em 2em 0.1em 2em;
+}
+
+.hamb__items {
+	display: none;
+	list-style: none;
+}
+
+.hamb__items li {
+	display: block;
+	padding: 1em;
+}
+
+.hamb__items li a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.15em;
+	font-weight: normal;
+}
+
+/* Hambuger menu: mobile first */
+
+/* Hide check box */
+#hamburger {
+	display: none;
+}
+
+/* Show hamburger icon */
+.hamb__btn {
+	display: inline-block;
+	color: white;
+	font-size: 2em;
+	font-style: normal;
+	padding: 0;
+	user-select: none;
+}
+
+.hamb__nav input:checked~.hamb__items {
+	display: block;
+	position: fixed;
+	top: 5em;
+    right: 0;
+	background-color: #212121;
+}
+
+/* For desktop view: min-width: 768px = 48em */
+@media screen and (min-width: 48em) {
+
+	.hamb__btn {
+		display: none;
+	}
+
+	.hamb__items {
+		display: block;
+	}
+
+	.hamb__items li {
+		display: inline-block;
+		padding: 1em;
+	}
+}
+
+/* ----------------- */
+/* End header styles */
+
+/* ----------- */
+/* Main styles */
+
+/* Portada */
+.portada {
+	padding: 1em;
+	height: 80vh;
+	background-image: url("../img/cover-2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.portada__title {
+	display: block;
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: white;
+}
+
+.portada__subtitle {
+	display: block;
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: lighter;
+	color: white;
+}
+
+/* Sections */
+/* -------- */
+.section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 1em 1em 1em 1em;
+	box-shadow: 10px 10px 15px lightslategray;
+}
+
+.section__title--text {
+	text-align: center;
+	display: block;
+	font-size: 2em;
+	font-weight: bold;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+.section__imgContainer {
+	max-width: 800px;
+	align-self: center;
+}
+
+.section__sideParagraph {
+	max-width: 800px;
+	align-self: center;
+}
+
+.section__sideParagraph p {
+	padding: 1em;
+	line-height: 1.75em;
+	font-size: 1.15em;
+	font-style: italic;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.section__sideParagraph a {
+	padding: 1em;
+	line-height: 1.75em;
+	font-size: 1.15em;
+}
+
+/* Products section */
+/* ---------------- */
+.sectionProducts {
+	overflow: hidden;
+	padding: 1em;
+	margin: 1em 1em 1em 1em;
+	box-shadow: 10px 10px 15px lightslategray;
+}
+
+.sectionProducts__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.productCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 450px;
+	box-shadow: 10px 10px 15px lightslategray;
+	margin: 1em;
+}
+
+.productCard__title {
+	padding: .5em;
+}
+
+.productCard__title--text {
+	font-size: 1.5em;
+	font-weight: normal;
+	display: block;
+	text-align: center;
+	padding: 1em;
+}
+
+.productCard__img {
+	padding: 1.5em;
+}
+
+.productCard__text {
+	padding: 1em;
+}
+
+.productCard__text p {
+	color: black;
+	text-align: center;
+	padding: 1em;
+	font-weight: lighter;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.productCard__text a {
+	color: black;
+	text-align: right;
+	padding: 1em;
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/* Team page */
+.team__skills {
+	padding: 1em 1em 1em 2em;
+	line-height: 1.75em;
+	font-size: 1em;
+	font-weight: lighter;
+}
+
+/* Contact form */
+.formCard {
+	width: 340px;
+	padding: 2em;
+	margin: 1em;
+	align-items: center;
+	box-shadow: 10px 10px 15px lightslategray;
+}
+
+.formCard__row {
+	display: block;
+}
+
+.form__title {
+	display: block;
+	padding-bottom: 0.25em;
+	text-align: left;
+	font-size: 300%;
+	font-weight: bold;
+	color: black;
+}
+
+.form__subTitle {
+	display: block;
+	padding-bottom: 0.5em;
+	margin-bottom: 1em;
+	text-align: left;
+	font-size: 150%;
+	font-weight: normal;
+	color: black;
+}
+
+.formCard__row .contact__form fieldset {
+	padding: 1em;
+}
+
+.formCard__row .contact__form input {
+	display: block;
+	margin: 1em;
+}
+
+.formCard__row textarea {
+	width: 250px;
+	height: 200px;
+}
+
+.formCard__row .contact__form input#btnSend, input#btnClear {
+	display: inline;
+	padding: 0.5em 1em 0.5em 1em;
+	margin-top: 1em;
+}
+/* --------------- */
+/* End main syles */
+
+
+/* -------------------------------------- */
+/* ------------- Footer Style ----------- */
+
+footer a, span, li{
+	color: white;
+}
+
+footer i {
+	font-size: 1em;
+	margin-bottom: 0;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer ul {
+	list-style: none;
+	margin-left: 2em;
+}
+
+footer li {
+	padding: 0.4em;
+	font-weight: lighter;
+}
+
+.footer__section--Title {
+	display: block;
+	font-size: 1.3em;
+	padding: 0 0 0.5em 0;
+}
+
+.footer__dytSignature span {
+	font-size: 0.9em;
+}
+/* ----------------- */
+/* End footer styles */
+
+
+/* @media queries */
+/* -------------- */
+
+/*
+ * NOTE:
+ *		Express all @medias on em (units)
+ *		1em = 16px. To use relative units and avoid
+ *		problems on screen with differents density of pixels
+ */
+
+ /* Tablet: min-width: 768px */
+@media screen and (min-width: 48em) {
+
+	.portada__title {
+		font-size: 3em;
+	}
+
+	.portada__subtitle {
+		font-size: 2em;
+	}
+
+	.formCard {
+		width: 550px;
+	}
+
+	.formCard__row textarea {
+		width: 450px;
+		height: 320px;
+	}
+
+	.teamPageGrid {
+		display: grid;
+		grid-template-columns: 5% 90% 5%;
+		grid-row: auto;
+	}
+
+	.section__imgContainer {
+		max-width: 750px;
+	}
+
+	.section__sideParagraph {
+		max-width: 750px;
+	}
+
+	.productCard {
+		max-width: 550px;
+	}
+
+	.productCard__text {
+		font-size: 1.5em;
+	}
+}
+
+/* Add content on footer: Laptop --> min-width: 1024px */
+@media screen and (min-width: 64em) {
+
+	.portada__title {
+		font-size: 5em;
+	}
+
+	.portada__subtitle {
+		font-size: 3em;
+	}
+
+	.formCard {
+		width: 600px;
+	}
+
+	.formCard__row textarea {
+		width: 500px;
+		height: 250px;
+	}
+
+	.section__title--text {
+		font-size: 3em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+
+	.productCard__title--text {
+		font-size: 2em;
+	}
+
+	.teamPageGrid {
+		display: grid;
+		grid-template-columns: 15% 70% 15%;
+		grid-row: auto;
+	}
+
+	.teamPageGrid .teamCards__grid .section__imgContainer {
+		max-width: 300px;
+	}
+
+	.teamPageGrid .teamCards__grid .section__sideParagraph {
+		max-width: 400px;
+	}
+
+	.section__imgContainer {
+		max-width: 450px;
+	}
+
+	.section__sideParagraph {
+		max-width: 450px;
+	}
+
+	.productCard {
+		max-width: 650px;
+	}
+
+	footer {
+		grid-template-columns: 5% 20% 20% 30% 20% 5%;
+	}
+
+	.footer__nav {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.footer__socialNetworks {
+		grid-column: 3;
+		grid-row: 1;
+	}
+
+	.footer__contact {
+		display: block;
+		grid-column: 4;
+		grid-row: 1;
+	}
+
+	.footer__map {
+		display: block;
+		justify-self: end;
+		grid-column: 5;
+		grid-row: 1;
+	}
+
+	.footer__map iframe {
+		width: 200px;
+		height: 200px;
+	}
+
+	.footer__dytSignature {
+		font-weight: lighter;
+		justify-self: end;
+		grid-column-start: 2;
+		grid-column-end: 6;
+		grid-row: 2;
+	}
+}
+
+/* Laptop L: 1440px */
+ @media screen and (min-width: 90em) {
+
+	.section__imgContainer {
+		max-width: 700px;
+	}
+
+	.section__sideParagraph {
+		max-width: 700px;
+		line-height: 2em;
+		font-size: 1.05em;
+	}
+
+	.productCard {
+		max-width: 420px;
+	}
+
+	.productCard__text {
+		font-size: 1em;
+	}
+ }
+
+/* Full HD resolution: min-width:1920px */
+ @media screen and (min-width: 120em) {
+
+	.formCard {
+		width: 800px;
+	}
+
+	.formCard__row textarea {
+		width: 700px;
+		height: 200px;
+	}
+
+	.teamPageGrid .teamCards__grid .section__imgContainer {
+		max-width: 750px;
+	}
+
+	.teamPageGrid .teamCards__grid .section__sideParagraph {
+		max-width: 750px;
+	}
+
+	.section__imgContainer {
+		max-width: 900px;
+	}
+
+	.section__sideParagraph {
+		max-width: 800px;
+		line-height: 2.5em;
+		font-size: 1.25em;
+	}
+
+	.productCard {
+		max-width: 550px;
+	}
+
+	.footer__map iframe {
+		width: 300px;
+		height: 200px;
+	}
+
+}
+
+/* UDH Monitors: min-width: 2560px */
+@media screen and (min-width: 160em) {
+
+	.portada__title {
+		font-size: 5em;
+	}
+
+	.portada__subtitle {
+		font-size: 3em;
+	}
+
+	.formCard {
+		width: 900px;
+	}
+
+	.formCard__row textarea {
+		width: 800px;
+		height: 550px;
+	}
+
+	.section__imgContainer {
+		max-width: 1000px;
+	}
+
+	.section__sideParagraph {
+		max-width: 1000px;
+		line-height: 2.5em;
+		font-size: 1.5em;
+	}
+
+	.productCard {
+		max-width: 750px;
+	}
+
+	.footer__map iframe {
+		width: 400px;
+		height: 220px;
+	}
+
+}
+/* ---------- */
+/* End @media */
+
+/* End file */
