@@ -195,9 +195,9 @@ footer {
 	color: white;
 }
 
-.hamb__items li:hover {
+/* .hamb__items li:hover {
 	transform: scale(1.1);
-}
+} */
 
 .hamb__items li a:hover {
 	filter: drop-shadow(4px 4px 10px white);
