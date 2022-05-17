@@ -195,9 +195,9 @@ footer {
 	color: white;
 }
 
-/* .hamb__items li:hover {
+.hamb__items li:hover {
 	transform: scale(1.1);
-} */
+}
 
 .hamb__items li a:hover {
 	filter: drop-shadow(4px 4px 10px white);
@@ -272,7 +272,7 @@ footer {
 	color: white;
 	/* Animation config */
 	/* animation-delay: .25s; */
-	animation-duration: 5s;
+	/* animation-duration: 5s; */
 }
 
 .portada__subtitle {
@@ -282,8 +282,8 @@ footer {
 	font-weight: lighter;
 	color: white;
 	/* Animation config */
-	animation-delay: 1s;
-	animation-duration: 5s;
+	/* animation-delay: 1s; */
+	/* animation-duration: 5s; */
 }
 
 /* Sections */
