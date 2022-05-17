@@ -185,8 +185,8 @@ footer {
 .hamb__items li a {
 	text-decoration: none;
 	color: white;
-	font-size: 1.15em;
-	font-weight: normal;
+	font-size: 1.1em;
+	font-weight: lighter;
 }
 
 /* Hambuger menu: mobile first */
