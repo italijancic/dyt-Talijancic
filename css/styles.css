@@ -195,14 +195,14 @@ footer {
 	color: white;
 }
 
-.hamb__items li:hover {
+/* .hamb__items li:hover {
 	transform: scale(1.1);
 }
 
 .hamb__items li a:hover {
 	filter: drop-shadow(4px 4px 10px white);
 	color: white;
-}
+} */
 
 /* Hambuger menu: mobile first */
 
@@ -489,7 +489,7 @@ footer li {
 	color: white;
 }
 
-.footer__nav li a:hover {
+/* .footer__nav li a:hover {
 	color: white;
 }
 
@@ -499,7 +499,7 @@ footer li {
 
 .footer__socialNetworks li:hover {
 	filter: drop-shadow(2px 2px 5px white);
-}
+} */
 
 .footer__section--Title {
 	display: block;
