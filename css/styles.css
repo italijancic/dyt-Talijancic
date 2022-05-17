@@ -164,6 +164,7 @@ footer {
 	width: 3em;
 	/* Animation Config */
 	animation-delay: 0s;
+	animation-duration: 4s;
 }
 
 .hamb__nav {
@@ -186,23 +187,10 @@ footer {
 
 .hamb__items li a {
 	text-decoration: none;
-	color: #bbbbbb;
+	color: white;
 	font-size: 1.15em;
-	font-weight: lighter;
+	font-weight: normal;
 }
-
-.hamb__items li .active__item {
-	color: white;
-}
-
-/* .hamb__items li:hover {
-	transform: scale(1.1);
-}
-
-.hamb__items li a:hover {
-	filter: drop-shadow(4px 4px 10px white);
-	color: white;
-} */
 
 /* Hambuger menu: mobile first */
 
@@ -272,7 +260,7 @@ footer {
 	color: white;
 	/* Animation config */
 	/* animation-delay: .25s; */
-	/* animation-duration: 5s; */
+	animation-duration: 5s;
 }
 
 .portada__subtitle {
@@ -282,8 +270,8 @@ footer {
 	font-weight: lighter;
 	color: white;
 	/* Animation config */
-	/* animation-delay: 1s; */
-	/* animation-duration: 5s; */
+	animation-delay: 1s;
+	animation-duration: 5s;
 }
 
 /* Sections */
@@ -480,26 +468,6 @@ footer li {
 	padding: 0.4em;
 	font-weight: lighter;
 }
-
-.footer__nav li a {
-	color: #bbbbbb;
-}
-
-.footer__nav li .active__item {
-	color: white;
-}
-
-/* .footer__nav li a:hover {
-	color: white;
-}
-
-.footer__nav li:hover {
-	filter: drop-shadow(2px 2px 5px white);
-}
-
-.footer__socialNetworks li:hover {
-	filter: drop-shadow(2px 2px 5px white);
-} */
 
 .footer__section--Title {
 	display: block;
