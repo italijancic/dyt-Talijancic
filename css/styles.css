@@ -33,12 +33,8 @@ footer p {
  /* Tablet: min-width: 768px */
  @media screen and (min-width: 48em) {
 
-	.portada__title {
-		font-size: 3em;
-	}
-
-	.portada__subtitle {
-		font-size: 2em;
+	footer p {
+		font-size: 0.9em;
 	}
 
 }
@@ -46,14 +42,9 @@ footer p {
 /* Add content on footer: Laptop --> min-width: 1024px */
 @media screen and (min-width: 64em) {
 
-	.portada__title {
-		font-size: 5em;
+	footer p {
+		font-size: 1em;
 	}
-
-	.portada__subtitle {
-		font-size: 3em;
-	}
-
 }
 
 /* Laptop L: 1440px */
@@ -63,33 +54,16 @@ footer p {
 		width: 380px;
 		height: 220px;
 	}
-
-	footer p {
-		font-size: 1em;
-	}
 }
 
 /* Full HD resolution: min-width:1920px */
  @media screen and (min-width: 120em) {
-
-
-	.footer__map iframe {
-		width: 300px;
-		height: 200px;
-	}
 
 }
 
 /* UDH Monitors: min-width: 2560px */
 @media screen and (min-width: 160em) {
 
-	.portada__title {
-		font-size: 5em;
-	}
-
-	.portada__subtitle {
-		font-size: 3em;
-	}
 }
 /* ---------- */
 /* End @media */
