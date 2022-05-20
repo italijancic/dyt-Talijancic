@@ -16,15 +16,7 @@ footer .nav a {
 	color: white;
 }
 
-.footer__contact {
-	display: none;
-}
-
-.footer__map {
-	display: none;
-}
-
-.footer__dytSignature{
+footer p {
 	font-size: 0.7em;
 }
 
@@ -62,29 +54,19 @@ footer .nav a {
 		font-size: 3em;
 	}
 
-	.footer__contact {
-		display: block;
-	}
-
-	.footer__map {
-		display: block;
-		justify-self: end;
-	}
-
-	.footer__map iframe {
-		width: 200px;
-		height: 200px;
-	}
-
-	.footer__dytSignature {
-		font-size: 1em;
-	}
 }
 
 /* Laptop L: 1440px */
  @media screen and (min-width: 90em) {
 
+	footer iframe {
+		width: 380px;
+		height: 220px;
+	}
 
+	footer p {
+		font-size: 1em;
+	}
 }
 
 /* Full HD resolution: min-width:1920px */
@@ -107,11 +89,6 @@ footer .nav a {
 
 	.portada__subtitle {
 		font-size: 3em;
-	}
-
-	.footer__map iframe {
-		width: 400px;
-		height: 220px;
 	}
 }
 /* ---------- */
