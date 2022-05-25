@@ -17,6 +17,14 @@
 	line-height: 1.5em;
 }
 
+.skills__ul {
+	font-size: 1em;
+	font-style: italic;
+	font-weight: lighter;
+	line-height: 1.5em;
+	padding-top: 1em;
+}
+
 footer .nav a {
 	color: white;
 }
@@ -65,12 +73,22 @@ footer p {
 		font-size: 1.25em;
 		line-height: 1.8em;
 	}
+
+	.skills__ul {
+		font-size: 1.25em;
+		line-height: 1.8em;
+	}
 }
 
 /* Full HD resolution: min-width:1920px */
  @media screen and (min-width: 120em) {
 
 	.sections__text {
+		font-size: 1.4em;
+		line-height: 2em;
+	}
+
+	.skills__ul {
 		font-size: 1.4em;
 		line-height: 2em;
 	}

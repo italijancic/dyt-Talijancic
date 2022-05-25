@@ -9,117 +9,139 @@
 	<title>Contacto - D&T</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
 
-	<!-- Link Style Sheet -->
-	<link rel="stylesheet" href="../css/styles_old.css">
-
 	<!-- Boxicons CSS -->
 	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+	<!-- Link Bootstrap .css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="../css/styles.css">
+
 </head>
 <body>
 
 	<!-- Header -->
-	<header>
-		<!-- Hamburger menu -->
-		<nav class="hamb__nav">
-			<a href="../index.html">
-				<img class="header__navLogo animate__animated animate__flipInX" src="../img/LogoBlanco.png" alt="logoD&T">
-			</a>
-			<!-- Hamburger icon -->
-			<input type="checkbox" id="hamburger">
-			<label for="hamburger" class="hamb__btn"><i class="bx bx-menu"></i></label>
-			<!-- Menu items -->
-			<ul class="hamb__items">
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="./empresa.html">La Empresa</a></li>
-				<li><a href="./productos.html">Productos</a></li>
-				<li><a href="./equipo.html">Equipo</a></li>
-				<li><a class="active__item" href="./contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
+	<header class="container-fluid bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="../index.html">
+					<img src="../img/LogoBlanco.png" alt="logoDyT_nav" class="header__navLogo header__navLogo animate__animated animate__flipInX">
+				</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto">
+				  <li class="nav-item">
+					<a class="nav-link fs-6 fw-light" href="../index.html">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link fs-6 fw-light" href="./empresa.html">La Empresa</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link fs-6 fw-light" href="./productos.html">Productos</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link fs-6 fw-light"  href="./equipo.html">Equipo</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active fs-6 fw-light" aria-current="page" href="./contacto.html">Contacto</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
 	</header>
 
 	<!-- Main -->
-	<main>
+	<main class="container">
 
-		<section class="formCard gray">
-			<div class="formCard__row">
-				<span class="form__title">Contacto</span>
-			</div>
-			<div class="formCard__row">
-				<span class="form__subTitle">Hagamos realidad tu idea</span>
-			</div>
-			<div class="formCard__row">
-				<form class="contact__form" action="" method="GET" enctype="">
-					<fieldset>
-						<legend>Hacé tu consulta</legend>
-						<label for="name">Nombre (obligatorio):</label>
-						<input type="text" id="name" name="name" value="" placeholder="John">
-						<label for="email">Correo electrónico (obligatorio):</label>
-						<input type="email" id="email" name="email" placeholder="jdoe@email.com">
-						<label for="asunto">Asunto:</label>
-						<input type="text" id="asunto" name="asunto" placeholder="">
-						<label for="mensaje"></label>
-						<textarea name="mensaje" id="mensaje" cols="70" rows="15" placeholder="Escribe tu consulta aquí"></textarea>
-						<!-- <textarea name="mensaje" id="mensaje" placeholder="Escribe tu consulta aquí"></textarea> -->
-						<div>
-							<input id="btnSend" type="submit" value="Enviar">
-							<input id="btnClear" type="reset" value="Borrar">
-						</div>
-					</fieldset>
-				</form>
+		<section class="row mt-3 mb-3">
+			<div class="col-auto p-4 shadow-lg animate__animated animate__flipInY">
+				<h1 class="display-3">Contacto</h1>
+				<h2 class="display-6 mb-5">Hagamos realidad tu idea</h2>
+				<form action="" method="GET" enctype="">
+					<div class="form-group mb-3">
+					  <label for="inputName">Nombre</label>
+					  <input type="email" class="form-control" id="inputName" aria-describedby="Jose Perez" placeholder="Ingrese su nombre">
+					</div>
+					<div class="form-group mb-3">
+					  <label for="inputEmail">Email</label>
+					  <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico">
+					  <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su email con otras personas o páginas.</small>
+					</div>
+					<div class="form-group mb-3">
+					  <label for="inputAsunto">Asunto</label>
+					  <input type="email" class="form-control" id="inputAsunto" placeholder="Ingrese el motivo de su consulta">
+					</div>
+					<div class="form-group mb-5">
+						<textarea class="form-control" aria-label="With textarea" placeholder="Ingrese su consulta aquí"></textarea>
+					</div>
+					<div class="form-group text-end">
+						<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+						<button type="submit" class="btn btn-secondary btn-lg">Borrar</button>
+					</div>
+				  </form>
 			</div>
 		</section>
 
 	</main>
 
 	<!-- Footer -->
-	<footer>
-		<!-- 1st row of footer -->
-		<div class="footer__nav">
-			<span class="footer__section--Title">Mapa del sitio</span>
-			<!-- Footer Nav Bar -->
-			<nav>
-				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="./empresa.html">La Empresa</a></li>
-					<li><a href="./productos.html">Productos</a></li>
-					<li><a href="./equipo.html">Equipo</a></li>
-					<li><a class="active__item" href="./contacto.html">Contacto</a></li>
-				</ul>
-			</nav>
-		</div>
-
-		<div class="footer__socialNetworks">
-			<span class="footer__section--Title">Redes Sociales</span>
-			<ul class="footer__socialNetworksList">
-				<li><i class="bx bxl-facebook-square"></i><a href="https://www.facebook.com/dyt.ingenieria" target="_blank"> Facebook</a></li>
-				<li><i class="bx bxl-instagram"></i><a href="https://www.instagram.com/dyt.iot/" target="_blank"> Instagram</a></li>
-				<li><i class="bx bxl-linkedin-square"></i><a href="https://ar.linkedin.com/in/dyt-iot?trk=public_profile_samename-profile" target="_blank"> LikedIn</a></li>
-				<li><i class="bx bxl-github"></i><a href="https://github.com/dytsoluciones" target="_blank"> Github</a></li>
-			</ul>
-		</div>
-
-		<div class="footer__contact">
-			<span class="footer__section--Title">Contacto</span>
-			<ul class="footer__contactList">
-				<li><i class="bx bxs-envelope"></i> ingeniería@dytsoluciones.com.ar</li>
-				<li><i class="bx bxs-phone"></i> +54 9(03482) - 15317662</li>
-				<li><i class="bx bxs-pin"></i> Avellaneda | Santa Fe - Argentina</li>
-			</ul>
-		</div>
-
-		<div class="footer__map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6970.734964574503!2d-59.63852158848192!3d-29.124349540685127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1650341476126!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</div>
-
-		<!-- 2nd row of footer -->
-		<div class="footer__dytSignature">
-			<span>by D&T Soluciones | 2022 © copyright all rights reserved</span>
+	<footer class="container-fluid bg-dark text-light p-4">
+		<div class="container">
+			<!-- Footer Info -->
+			<div class="row">
+				<!-- Footer: nav -->
+				<div class="col-6 col-lg-4 col-xl-2">
+					<h5>Mapa del Sitio</h5>
+					<nav class="nav flex-column">
+						<a class="nav-link fw-lighter" href="../index.html">Home</a>
+						<a class="nav-link fw-lighter" href="./empresa.html">La Empresa</a>
+						<a class="nav-link fw-lighter" href="./productos.html">Productos</a>
+						<a class="nav-link fw-lighter" href="./equipo.html">Equipo</a>
+						<a class="nav-link active fw-lighter" aria-current="page" href="./contacto.html">Contacto</a>
+					</nav>
+				</div>
+				<!-- Footer: Social Networks -->
+				<div class="col-6 col-lg-4 col-xl-2">
+					<h5>Redes Sociales</h5>
+					<nav class="nav flex-column">
+						<a class="nav-link fw-lighter" href="https://www.facebook.com/dyt.ingenieria" target="_blank"> <i class="bx bxl-facebook-square"></i> Facebook</a>
+						<a class="nav-link fw-lighter" href="https://www.instagram.com/dyt.iot/" target="_blank"> <i class="bx bxl-instagram"></i> Instagram</a>
+						<a class="nav-link fw-lighter" href="https://ar.linkedin.com/in/dyt-iot?trk=public_profile_samename-profile" target="_blank"> <i class="bx bxl-linkedin-square"></i> LikedIn</a>
+						<a class="nav-link fw-lighter" href="https://github.com/dytsoluciones" target="_blank"> <i class="bx bxl-github"></i> Github</a>
+					</nav>
+				</div>
+				<!-- Footer: Contact Info -->
+				<div class="d-none d-lg-block col-lg-4 footer__contact">
+					<h5>Contacto</h5>
+					<nav class="nav flex-column">
+						<a class="nav-link fw-lighter"><i class="bx bxs-envelope"></i> ingeniería@dytsoluciones.com.ar</a>
+						<a class="nav-link fw-lighter"><i class="bx bxs-phone"></i> +54 9(03482) - 15317662</a>
+						<a class="nav-link fw-lighter"><i class="bx bxs-pin"></i> Avellaneda | Santa Fe - Argentina</a>
+					</nav>
+				</div>
+				<!-- Footer: Map -->
+				<div class="d-none d-xl-block col-xl-4 text-end">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6970.734964574503!2d-59.63852158848192!3d-29.124349540685127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1650341476126!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+			<!-- Footer Signature -->
+			<div class="row">
+				<div class="col-12">
+					<p class="fw-lighter text-end">by D&T Soluciones | 2022 © copyright all rights reserved</p>
+				</div>
+			</div>
 		</div>
 	</footer>
+
+	<!-- Link Bootstrap .js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
