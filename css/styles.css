@@ -1,41 +1,34 @@
 .header__navLogo {
-	width: 3em;
-}
+  width: 3em; }
 
 .portada {
-	height: 80vh;
-	background-image: url("../img/cover-2.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
+  height: 80vh;
+  background-image: url("../img/cover-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 .sections__text {
-	font-size: 1em;
-	font-style: italic;
-	font-weight: lighter;
-	line-height: 1.5em;
-}
+  font-size: 1em;
+  font-style: italic;
+  font-weight: lighter;
+  line-height: 1.5em; }
 
 .skills__ul {
-	font-size: 1em;
-	font-style: italic;
-	font-weight: lighter;
-	line-height: 1.5em;
-	padding-top: 1em;
-}
+  font-size: 1em;
+  font-style: italic;
+  font-weight: lighter;
+  line-height: 1.5em;
+  padding-top: 1em; }
 
 footer .nav a {
-	color: white;
-}
+  color: white; }
 
 footer p {
-	font-size: 0.7em;
-}
+  font-size: 0.7em; }
 
 /* @media queries */
 /* -------------- */
-
 /*
  * NOTE:
  *		Apply mobile first methodology
@@ -43,66 +36,43 @@ footer p {
  *		1em = 16px. To use relative units and avoid
  *		problems on screen with differents density of pixels
  */
-
- /* Tablet: min-width: 768px */
- @media screen and (min-width: 48em) {
-
-	footer p {
-		font-size: 0.9em;
-	}
-
-}
+/* Tablet: min-width: 768px */
+@media screen and (min-width: 48em) {
+  footer p {
+    font-size: 0.9em; } }
 
 /* Add content on footer: Laptop --> min-width: 1024px */
 @media screen and (min-width: 64em) {
-
-	footer p {
-		font-size: 1em;
-	}
-}
+  footer p {
+    font-size: 1em; } }
 
 /* Laptop L: 1440px */
- @media screen and (min-width: 90em) {
-
-	footer iframe {
-		width: 380px;
-		height: 220px;
-	}
-
-	.sections__text {
-		font-size: 1.25em;
-		line-height: 1.8em;
-	}
-
-	.skills__ul {
-		font-size: 1.25em;
-		line-height: 1.8em;
-	}
-}
+@media screen and (min-width: 90em) {
+  footer iframe {
+    width: 380px;
+    height: 220px; }
+  .sections__text {
+    font-size: 1.25em;
+    line-height: 1.8em; }
+  .skills__ul {
+    font-size: 1.25em;
+    line-height: 1.8em; } }
 
 /* Full HD resolution: min-width:1920px */
- @media screen and (min-width: 120em) {
-
-	.sections__text {
-		font-size: 1.4em;
-		line-height: 2em;
-	}
-
-	.skills__ul {
-		font-size: 1.4em;
-		line-height: 2em;
-	}
-}
+@media screen and (min-width: 120em) {
+  .sections__text {
+    font-size: 1.4em;
+    line-height: 2em; }
+  .skills__ul {
+    font-size: 1.4em;
+    line-height: 2em; } }
 
 /* UDH Monitors: min-width: 2560px */
 @media screen and (min-width: 160em) {
+  .sections__text {
+    font-size: 1.75em;
+    line-height: 2.5em; } }
 
-	.sections__text {
-		font-size: 1.75em;
-		line-height: 2.5em;
-	}
-}
 /* ---------- */
 /* End @media */
-
 /* End file */
