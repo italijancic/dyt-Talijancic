@@ -8,13 +8,7 @@
   background-position: center;
   background-size: cover; }
 
-.sideText-l {
-  font-size: 1em;
-  font-style: italic;
-  font-weight: lighter;
-  line-height: 1.5em; }
-
-.sideText-m {
+.sideText {
   font-size: 1em;
   font-style: italic;
   font-weight: lighter;
@@ -54,10 +48,7 @@ footer p {
   footer iframe {
     width: 380px;
     height: 220px; }
-  .sideText-l {
-    font-size: 1.25em;
-    line-height: 1.8em; }
-  .sideText-m {
+  .sideText {
     font-size: 1.25em;
     line-height: 1.8em; }
   .skills__ul {
@@ -65,7 +56,7 @@ footer p {
     line-height: 1.8em; } }
 
 @media screen and (min-width: 87.5em) {
-  .sideText-l {
+  .sideText {
     font-size: 1.4em;
     line-height: 2em; }
   .skills__ul {
@@ -74,7 +65,7 @@ footer p {
 
 /* UDH Monitors: min-width: 2560px */
 @media screen and (min-width: 160em) {
-  .sideText-l {
+  .sideText {
     font-size: 1.75em;
     line-height: 2.5em; } }
 

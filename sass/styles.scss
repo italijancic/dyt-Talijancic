@@ -16,19 +16,19 @@
 	background-size: cover;
 }
 
-.sideText-l {
+.sideText {
 	font-size: 1em;
 	font-style: italic;
 	font-weight: lighter;
 	line-height: 1.5em;
 }
 
-.sideText-m {
-	font-size: 1em;
-	font-style: italic;
-	font-weight: lighter;
-	line-height: 1.5em;
-}
+// .sideText-m {
+// 	font-size: 1em;
+// 	font-style: italic;
+// 	font-weight: lighter;
+// 	line-height: 1.5em;
+// }
 
 .skills__ul {
 	font-size: 1em;
@@ -94,15 +94,15 @@ footer {
 		}
 	}
 
-	.sideText-l {
+	.sideText {
 		font-size: 1.25em;
 		line-height: 1.8em;
 	}
 
-	.sideText-m {
-		font-size: 1.25em;
-		line-height: 1.8em;
-	}
+	// .sideText-m {
+	// 	font-size: 1.1em;
+	// 	line-height: 1.5em;
+	// }
 
 	.skills__ul {
 		font-size: 1.25em;
@@ -113,7 +113,7 @@ footer {
 // Extra Extra Large Screens >= 1400 px
  @media screen and (min-width: map-get($breackpoints, xxl) ) {
 
-	.sideText-l {
+	.sideText {
 		font-size: 1.4em;
 		line-height: 2em;
 	}
@@ -127,7 +127,7 @@ footer {
 /* UDH Monitors: min-width: 2560px */
 @media screen and (min-width: 160em) {
 
-	.sideText-l {
+	.sideText {
 		font-size: 1.75em;
 		line-height: 2.5em;
 	}
