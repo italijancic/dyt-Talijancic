@@ -1,5 +1,6 @@
 // Imports
 @import "vars";
+@import "breakpoints";
 
 
 // Header nav logo size
@@ -15,7 +16,14 @@
 	background-size: cover;
 }
 
-.sections__text {
+.sideText-l {
+	font-size: 1em;
+	font-style: italic;
+	font-weight: lighter;
+	line-height: 1.5em;
+}
+
+.sideText-m {
 	font-size: 1em;
 	font-style: italic;
 	font-weight: lighter;
@@ -41,7 +49,6 @@ footer {
 	}
 }
 
-
 /* @media queries */
 /* -------------- */
 
@@ -53,8 +60,8 @@ footer {
  *		problems on screen with differents density of pixels
  */
 
- /* Tablet: min-width: 768px */
- @media screen and (min-width: 48em) {
+// Medium Screens >= 768px
+ @media screen and (min-width: map-get($breackpoints, md)) {
 
 	footer {
 
@@ -65,8 +72,8 @@ footer {
 
 }
 
-/* Add content on footer: Laptop --> min-width: 1024px */
-@media screen and (min-width: 64em) {
+// Large Screens >= 992px
+@media screen and (min-width: map-get($breackpoints, lg)) {
 
 	footer {
 
@@ -76,8 +83,8 @@ footer {
 	}
 }
 
-/* Laptop L: 1440px */
- @media screen and (min-width: 90em) {
+// Extra Large Screens >= 1200px
+ @media screen and (min-width: map-get($breackpoints, xl)) {
 
 	footer {
 
@@ -87,7 +94,12 @@ footer {
 		}
 	}
 
-	.sections__text {
+	.sideText-l {
+		font-size: 1.25em;
+		line-height: 1.8em;
+	}
+
+	.sideText-m {
 		font-size: 1.25em;
 		line-height: 1.8em;
 	}
@@ -98,10 +110,10 @@ footer {
 	}
 }
 
-/* Full HD resolution: min-width:1920px */
- @media screen and (min-width: 120em) {
+// Extra Extra Large Screens >= 1400 px
+ @media screen and (min-width: map-get($breackpoints, xxl) ) {
 
-	.sections__text {
+	.sideText-l {
 		font-size: 1.4em;
 		line-height: 2em;
 	}
@@ -115,7 +127,7 @@ footer {
 /* UDH Monitors: min-width: 2560px */
 @media screen and (min-width: 160em) {
 
-	.sections__text {
+	.sideText-l {
 		font-size: 1.75em;
 		line-height: 2.5em;
 	}

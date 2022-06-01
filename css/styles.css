@@ -8,7 +8,13 @@
   background-position: center;
   background-size: cover; }
 
-.sections__text {
+.sideText-l {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: lighter;
+  line-height: 1.5em; }
+
+.sideText-m {
   font-size: 1em;
   font-style: italic;
   font-weight: lighter;
@@ -36,31 +42,30 @@ footer p {
  *		1em = 16px. To use relative units and avoid
  *		problems on screen with differents density of pixels
  */
-/* Tablet: min-width: 768px */
 @media screen and (min-width: 48em) {
   footer p {
     font-size: 0.9em; } }
 
-/* Add content on footer: Laptop --> min-width: 1024px */
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 62em) {
   footer p {
     font-size: 1em; } }
 
-/* Laptop L: 1440px */
-@media screen and (min-width: 90em) {
+@media screen and (min-width: 75em) {
   footer iframe {
     width: 380px;
     height: 220px; }
-  .sections__text {
+  .sideText-l {
+    font-size: 1.25em;
+    line-height: 1.8em; }
+  .sideText-m {
     font-size: 1.25em;
     line-height: 1.8em; }
   .skills__ul {
     font-size: 1.25em;
     line-height: 1.8em; } }
 
-/* Full HD resolution: min-width:1920px */
-@media screen and (min-width: 120em) {
-  .sections__text {
+@media screen and (min-width: 87.5em) {
+  .sideText-l {
     font-size: 1.4em;
     line-height: 2em; }
   .skills__ul {
@@ -69,7 +74,7 @@ footer p {
 
 /* UDH Monitors: min-width: 2560px */
 @media screen and (min-width: 160em) {
-  .sections__text {
+  .sideText-l {
     font-size: 1.75em;
     line-height: 2.5em; } }
 
