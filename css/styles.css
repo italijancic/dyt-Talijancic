@@ -40,11 +40,11 @@ footer p {
   footer p {
     font-size: 0.9em; } }
 
-@media screen and (min-width: 62em) {
+@media screen and (min-width: 64em) {
   footer p {
     font-size: 1em; } }
 
-@media screen and (min-width: 75em) {
+@media screen and (min-width: 90em) {
   footer iframe {
     width: 380px;
     height: 220px; }
@@ -55,7 +55,7 @@ footer p {
     font-size: 1.25em;
     line-height: 1.8em; } }
 
-@media screen and (min-width: 87.5em) {
+@media screen and (min-width: 120em) {
   .sideText {
     font-size: 1.4em;
     line-height: 2em; }

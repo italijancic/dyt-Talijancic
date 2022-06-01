@@ -23,13 +23,6 @@
 	line-height: 1.5em;
 }
 
-// .sideText-m {
-// 	font-size: 1em;
-// 	font-style: italic;
-// 	font-weight: lighter;
-// 	line-height: 1.5em;
-// }
-
 .skills__ul {
 	font-size: 1em;
 	font-style: italic;
@@ -61,7 +54,7 @@ footer {
  */
 
 // Medium Screens >= 768px
- @media screen and (min-width: map-get($breackpoints, md)) {
+ @media screen and (min-width: map-get($breackpoints, sm)) {
 
 	footer {
 
@@ -72,8 +65,8 @@ footer {
 
 }
 
-// Large Screens >= 992px
-@media screen and (min-width: map-get($breackpoints, lg)) {
+// Large Screens >= 1024px
+@media screen and (min-width: map-get($breackpoints, md)) {
 
 	footer {
 
@@ -83,8 +76,8 @@ footer {
 	}
 }
 
-// Extra Large Screens >= 1200px
- @media screen and (min-width: map-get($breackpoints, xl)) {
+// Extra Large Screens >= 1440px
+ @media screen and (min-width: map-get($breackpoints, lg)) {
 
 	footer {
 
@@ -99,19 +92,14 @@ footer {
 		line-height: 1.8em;
 	}
 
-	// .sideText-m {
-	// 	font-size: 1.1em;
-	// 	line-height: 1.5em;
-	// }
-
 	.skills__ul {
 		font-size: 1.25em;
 		line-height: 1.8em;
 	}
 }
 
-// Extra Extra Large Screens >= 1400 px
- @media screen and (min-width: map-get($breackpoints, xxl) ) {
+// Extra Large Screens >= 1920 px
+ @media screen and (min-width: map-get($breackpoints, xl) ) {
 
 	.sideText {
 		font-size: 1.4em;
@@ -125,7 +113,7 @@ footer {
 }
 
 /* UDH Monitors: min-width: 2560px */
-@media screen and (min-width: 160em) {
+@media screen and (min-width: map-get($breackpoints, xxl)) {
 
 	.sideText {
 		font-size: 1.75em;
