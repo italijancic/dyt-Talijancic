@@ -22,10 +22,68 @@
   padding-top: 1em; }
 
 footer .nav a {
-  color: white; }
+  color: #6c757d; }
 
 footer p {
   font-size: 0.7em; }
+
+footer h5 {
+  color: #495057; }
+
+.title {
+  font-size: 7em;
+  font-weight: normal;
+  color: #495057; }
+
+.colors-dark {
+  background-color: #212529;
+  color: #fff; }
+
+.link-dark {
+  text-decoration: none;
+  color: #212529;
+  font-style: normal;
+  font-weight: normal; }
+
+.colors-light-dark {
+  background-color: #6c757d;
+  color: #f8f9fa; }
+
+.link-light-dark {
+  text-decoration: none;
+  color: #6c757d;
+  font-style: normal;
+  font-weight: normal; }
+
+.colors-gray {
+  background-color: #e9ecef;
+  color: #343a40; }
+
+.link-gray {
+  text-decoration: none;
+  color: #e9ecef;
+  font-style: normal;
+  font-weight: normal; }
+
+.colors-light-gray {
+  background-color: #f8f9fa;
+  color: #212529; }
+
+.link-light-gray {
+  text-decoration: none;
+  color: #f8f9fa;
+  font-style: normal;
+  font-weight: normal; }
+
+.colors-light {
+  background-color: #fff;
+  color: #000; }
+
+.link-light {
+  text-decoration: none;
+  color: #fff;
+  font-style: normal;
+  font-weight: normal; }
 
 /* @media queries */
 /* -------------- */

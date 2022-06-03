@@ -1,5 +1,5 @@
 // Imports
-@import "vars";
+@import "colors";
 @import "breakpoints";
 
 
@@ -34,11 +34,46 @@
 footer {
 	.nav {
 		a {
-			color: white;
+			color: $gray-600;
 		}
 	}
 	p {
 		font-size: 0.7em;
+	}
+	h5 {
+		color: $gray-700;
+	}
+
+}
+
+.title {
+	font-size: 7em;
+	font-weight: normal;
+	color: $gray-700;
+
+}
+
+@each $name, $color in $palette {
+	.colors-#{$name} {
+		background-color: $color;
+		@if ($name == dark) {
+			color: $white;
+		} @else if ($name == light-dark) {
+			color: $gray-100;
+		} @else if ($name == gray){
+			color: $gray-800;
+		} @else if($name == light-gray){
+			color: $gray-900;
+		} @else {
+			color: $black;
+		}
+	}
+
+	.link-#{$name} {
+		text-decoration: none;
+		color: $color;
+		font-style: normal;
+		font-weight: normal;
 	}
 }
 
