@@ -47,10 +47,8 @@ footer {
 }
 
 .title {
-	font-size: 7em;
 	font-weight: normal;
 	color: $gray-700;
-
 }
 
 @each $name, $color in $palette {
