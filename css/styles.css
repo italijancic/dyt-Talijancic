@@ -30,9 +30,15 @@ footer p {
 footer h5 {
   color: #495057; }
 
-.title {
+.section-title, .products-title {
+  text-align: center;
   font-weight: normal;
-  color: #495057; }
+  font-style: normal;
+  padding-bottom: 1em; }
+
+.products-title {
+  color: #495057;
+  padding-bottom: 0.25em; }
 
 .colors-dark {
   background-color: #212529;
@@ -66,7 +72,7 @@ footer h5 {
 
 .colors-light-gray {
   background-color: #f8f9fa;
-  color: #212529; }
+  color: #343a40; }
 
 .link-light-gray {
   text-decoration: none;
@@ -109,21 +115,18 @@ footer h5 {
     font-size: 1.25em;
     line-height: 1.8em; }
   .skills__ul {
-    font-size: 1.25em;
-    line-height: 1.8em; } }
+    font-size: 1.4em;
+    line-height: 2em; } }
 
 @media screen and (min-width: 120em) {
   .sideText {
-    font-size: 1.4em;
-    line-height: 2em; }
-  .skills__ul {
     font-size: 1.4em;
     line-height: 2em; } }
 
 /* UDH Monitors: min-width: 2560px */
 @media screen and (min-width: 160em) {
   .sideText {
-    font-size: 1.75em;
+    font-size: 1.8em;
     line-height: 2.5em; } }
 
 /* ---------- */
