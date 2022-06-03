@@ -29,6 +29,11 @@
 	font-style: normal;
 }
 
+.empresa-text {
+	@extend .sideText;
+	font-style: normal;
+}
+
 .skills__ul {
 	font-size: 1em;
 	font-style: normal;
