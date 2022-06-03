@@ -24,9 +24,14 @@
 	line-height: 1.5em;
 }
 
+.product-text {
+	@extend .sideText;
+	font-style: normal;
+}
+
 .skills__ul {
 	font-size: 1em;
-	font-style: italic;
+	font-style: normal;
 	font-weight: lighter;
 	line-height: 1.5em;
 	padding-top: 1em;
@@ -106,6 +111,10 @@ footer {
 @media screen and (min-width: map-get($breackpoints, md)) {
 
 	@include footer__p--fontSize(1em);
+
+	.skills__ul {
+		@include resposive__font(1.2em, 1.7em);
+	}
 }
 
 // Extra Large Screens >= 1440px
@@ -118,7 +127,7 @@ footer {
 	}
 
 	.skills__ul {
-		@include resposive__font(1.4em, 2em);
+		@include resposive__font(1.5em, 2em);
 	}
 }
 
@@ -136,6 +145,8 @@ footer {
 
 /* UDH Monitors: min-width: 2560px */
 @media screen and (min-width: map-get($breackpoints, xxl)) {
+
+	@include footer__iframe--size(430px, 220px);
 
 	.sideText {
 		@include resposive__font(1.8em, 2.5em);
