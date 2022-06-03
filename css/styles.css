@@ -21,8 +21,7 @@
   font-size: 1em;
   font-style: normal;
   font-weight: lighter;
-  line-height: 1.5em;
-  padding-top: 1em; }
+  line-height: 1.5em; }
 
 footer .nav a {
   color: #6c757d; }
@@ -36,12 +35,10 @@ footer h5 {
 .section-title, .products-title {
   text-align: center;
   font-weight: normal;
-  font-style: normal;
-  padding-bottom: .5em; }
+  font-style: normal; }
 
 .products-title {
-  color: #495057;
-  padding-bottom: 0.25em; }
+  color: #495057; }
 
 .colors-dark {
   background-color: #212529;
@@ -109,6 +106,9 @@ footer h5 {
 @media screen and (min-width: 64em) {
   footer p {
     font-size: 1em; }
+  .sideText, .product-text {
+    font-size: 1.2em;
+    line-height: 1.7em; }
   .skills__ul {
     font-size: 1.2em;
     line-height: 1.7em; } }

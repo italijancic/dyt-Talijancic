@@ -34,7 +34,7 @@
 	font-style: normal;
 	font-weight: lighter;
 	line-height: 1.5em;
-	padding-top: 1em;
+	// padding-top: 1em;
 }
 
 footer {
@@ -56,13 +56,11 @@ footer {
 	text-align: center;
 	font-weight: normal;
 	font-style: normal;
-	padding-bottom: .5em;
 }
 
 .products-title {
 	@extend .section-title;
 	color: $gray-700;
-	padding-bottom: 0.25em;
 }
 
 @each $name, $color in $palette {
@@ -111,6 +109,10 @@ footer {
 @media screen and (min-width: map-get($breackpoints, md)) {
 
 	@include footer__p--fontSize(1em);
+
+	.sideText {
+		@include resposive__font(1.2em, 1.7em);
+	}
 
 	.skills__ul {
 		@include resposive__font(1.2em, 1.7em);
