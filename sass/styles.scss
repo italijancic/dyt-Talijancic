@@ -39,12 +39,20 @@
 	font-style: normal;
 	font-weight: lighter;
 	line-height: 1.5em;
-	// padding-top: 1em;
 }
 
 footer {
 	.nav {
 		a {
+			color: $gray-600;
+		}
+		a:hover {
+			color: $black;
+		}
+		li {
+			color: $gray-600;
+		}
+		li:hover {
 			color: $gray-600;
 		}
 	}

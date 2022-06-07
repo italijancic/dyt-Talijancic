@@ -29,6 +29,15 @@
 footer .nav a {
   color: #6c757d; }
 
+footer .nav a:hover {
+  color: #000; }
+
+footer .nav li {
+  color: #6c757d; }
+
+footer .nav li:hover {
+  color: #6c757d; }
+
 footer p {
   font-size: 0.7em; }
 
