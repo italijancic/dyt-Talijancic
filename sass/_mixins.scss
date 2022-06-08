@@ -1,0 +1,25 @@
+
+// Mixin to set font size and line_height
+@mixin resposive__font($size, $line_height) {
+	font-size: $size;
+	line-height: $line_height;
+}
+
+
+@mixin footer__p--fontSize($size) {
+	footer {
+		p {
+			font-size: $size;
+		}
+	}
+}
+
+@mixin footer__iframe--size($w, $h) {
+	footer {
+
+		iframe {
+			width: $w;
+			height: $h;
+		}
+	}
+}

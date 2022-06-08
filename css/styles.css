@@ -8,24 +8,99 @@
   background-position: center;
   background-size: cover; }
 
-.sideText {
+.sideText, .product-text, .empresa-text {
   font-size: 1em;
   font-style: italic;
   font-weight: lighter;
   line-height: 1.5em; }
 
+.product-text {
+  font-style: normal; }
+
+.empresa-text {
+  font-style: normal; }
+
 .skills__ul {
   font-size: 1em;
-  font-style: italic;
+  font-style: normal;
   font-weight: lighter;
-  line-height: 1.5em;
-  padding-top: 1em; }
+  line-height: 1.5em; }
 
 footer .nav a {
-  color: white; }
+  color: #6c757d; }
+
+footer .nav a:hover {
+  color: #000; }
+
+footer .nav li {
+  color: #6c757d; }
+
+footer .nav li:hover {
+  color: #6c757d; }
 
 footer p {
   font-size: 0.7em; }
+
+footer h5 {
+  color: #495057; }
+
+.section-title, .products-title {
+  text-align: center;
+  font-weight: normal;
+  font-style: normal; }
+
+.products-title {
+  color: #495057; }
+
+.colors-dark {
+  background-color: #212529;
+  color: #fff; }
+
+.link-dark {
+  text-decoration: none;
+  color: #212529;
+  font-style: normal;
+  font-weight: normal; }
+
+.colors-light-dark {
+  background-color: #6c757d;
+  color: #f8f9fa; }
+
+.link-light-dark {
+  text-decoration: none;
+  color: #6c757d;
+  font-style: normal;
+  font-weight: normal; }
+
+.colors-gray {
+  background-color: #e9ecef;
+  color: #343a40; }
+
+.link-gray {
+  text-decoration: none;
+  color: #e9ecef;
+  font-style: normal;
+  font-weight: normal; }
+
+.colors-light-gray {
+  background-color: #f8f9fa;
+  color: #343a40; }
+
+.link-light-gray {
+  text-decoration: none;
+  color: #f8f9fa;
+  font-style: normal;
+  font-weight: normal; }
+
+.colors-light {
+  background-color: #fff;
+  color: #000; }
+
+.link-light {
+  text-decoration: none;
+  color: #fff;
+  font-style: normal;
+  font-weight: normal; }
 
 /* @media queries */
 /* -------------- */
@@ -42,31 +117,37 @@ footer p {
 
 @media screen and (min-width: 64em) {
   footer p {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .sideText, .product-text, .empresa-text {
+    font-size: 1.2em;
+    line-height: 1.7em; }
+  .skills__ul {
+    font-size: 1.2em;
+    line-height: 1.7em; } }
 
 @media screen and (min-width: 90em) {
   footer iframe {
     width: 380px;
     height: 220px; }
-  .sideText {
+  .sideText, .product-text, .empresa-text {
     font-size: 1.25em;
     line-height: 1.8em; }
   .skills__ul {
-    font-size: 1.25em;
-    line-height: 1.8em; } }
+    font-size: 1.5em;
+    line-height: 2em; } }
 
 @media screen and (min-width: 120em) {
-  .sideText {
-    font-size: 1.4em;
-    line-height: 2em; }
-  .skills__ul {
+  .sideText, .product-text, .empresa-text {
     font-size: 1.4em;
     line-height: 2em; } }
 
 /* UDH Monitors: min-width: 2560px */
 @media screen and (min-width: 160em) {
-  .sideText {
-    font-size: 1.75em;
+  footer iframe {
+    width: 430px;
+    height: 220px; }
+  .sideText, .product-text, .empresa-text {
+    font-size: 1.8em;
     line-height: 2.5em; } }
 
 /* ---------- */
