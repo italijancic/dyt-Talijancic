@@ -1,5 +1,7 @@
 // Imports
-@import "vars";
+@import "colors";
+@import "breakpoints";
+@import "mixins";
 
 
 // Header nav logo size
@@ -15,32 +17,88 @@
 	background-size: cover;
 }
 
-.sections__text {
+.sideText {
 	font-size: 1em;
 	font-style: italic;
 	font-weight: lighter;
 	line-height: 1.5em;
 }
 
+.product-text {
+	@extend .sideText;
+	font-style: normal;
+}
+
+.empresa-text {
+	@extend .sideText;
+	font-style: normal;
+}
+
 .skills__ul {
 	font-size: 1em;
-	font-style: italic;
+	font-style: normal;
 	font-weight: lighter;
 	line-height: 1.5em;
-	padding-top: 1em;
 }
 
 footer {
 	.nav {
 		a {
-			color: white;
+			color: $gray-600;
+		}
+		a:hover {
+			color: $black;
+		}
+		li {
+			color: $gray-600;
+		}
+		li:hover {
+			color: $gray-600;
 		}
 	}
 	p {
 		font-size: 0.7em;
 	}
+	h5 {
+		color: $gray-700;
+	}
+
 }
 
+.section-title {
+	text-align: center;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.products-title {
+	@extend .section-title;
+	color: $gray-700;
+}
+
+@each $name, $color in $palette {
+	.colors-#{$name} {
+		background-color: $color;
+		@if ($name == dark) {
+			color: $white;
+		} @else if ($name == light-dark) {
+			color: $gray-100;
+		} @else if ($name == gray){
+			color: $gray-800;
+		} @else if($name == light-gray){
+			color: $gray-800;
+		} @else {
+			color: $black;
+		}
+	}
+
+	.link-#{$name} {
+		text-decoration: none;
+		color: $color;
+		font-style: normal;
+		font-weight: normal;
+	}
+}
 
 /* @media queries */
 /* -------------- */
@@ -53,71 +111,60 @@ footer {
  *		problems on screen with differents density of pixels
  */
 
- /* Tablet: min-width: 768px */
- @media screen and (min-width: 48em) {
+// Medium Screens >= 768px
+ @media screen and (min-width: map-get($breackpoints, sm)) {
 
-	footer {
-
-		p {
-			font-size: 0.9em;
-		}
-	}
+	@include footer__p--fontSize(0.9em);
 
 }
 
-/* Add content on footer: Laptop --> min-width: 1024px */
-@media screen and (min-width: 64em) {
+// Large Screens >= 1024px
+@media screen and (min-width: map-get($breackpoints, md)) {
 
-	footer {
+	@include footer__p--fontSize(1em);
 
-		p {
-			font-size: 1em;
-		}
-	}
-}
-
-/* Laptop L: 1440px */
- @media screen and (min-width: 90em) {
-
-	footer {
-
-		iframe {
-			width: 380px;
-			height: 220px;
-		}
-	}
-
-	.sections__text {
-		font-size: 1.25em;
-		line-height: 1.8em;
+	.sideText {
+		@include resposive__font(1.2em, 1.7em);
 	}
 
 	.skills__ul {
-		font-size: 1.25em;
-		line-height: 1.8em;
+		@include resposive__font(1.2em, 1.7em);
 	}
 }
 
-/* Full HD resolution: min-width:1920px */
- @media screen and (min-width: 120em) {
+// Extra Large Screens >= 1440px
+ @media screen and (min-width: map-get($breackpoints, lg)) {
 
-	.sections__text {
-		font-size: 1.4em;
-		line-height: 2em;
+	@include footer__iframe--size(380px, 220px);
+
+	.sideText {
+		@include resposive__font(1.25em, 1.8em);
 	}
 
 	.skills__ul {
-		font-size: 1.4em;
-		line-height: 2em;
+		@include resposive__font(1.5em, 2em);
 	}
+}
+
+// Extra Large Screens >= 1920 px
+ @media screen and (min-width: map-get($breackpoints, xl) ) {
+
+	.sideText {
+		@include resposive__font(1.4em, 2em);
+	}
+
+	// .skills__ul {
+	// 	@include resposive__font(1.25em, 1.8em);
+	// }
 }
 
 /* UDH Monitors: min-width: 2560px */
-@media screen and (min-width: 160em) {
+@media screen and (min-width: map-get($breackpoints, xxl)) {
 
-	.sections__text {
-		font-size: 1.75em;
-		line-height: 2.5em;
+	@include footer__iframe--size(430px, 220px);
+
+	.sideText {
+		@include resposive__font(1.8em, 2.5em);
 	}
 }
 /* ---------- */
