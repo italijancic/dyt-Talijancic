@@ -44,23 +44,24 @@
 footer {
 	.nav {
 		a {
-			color: $gray-600;
+			color: $gray-700;
 		}
 		a:hover {
 			color: $black;
 		}
 		li {
-			color: $gray-600;
+			color: $gray-700;
 		}
 		li:hover {
-			color: $gray-600;
+			color: $gray-700;
 		}
 	}
 	p {
 		font-size: 0.7em;
+		color: $gray-800;
 	}
 	h5 {
-		color: $gray-700;
+		color: $gray-800;
 	}
 
 }
@@ -73,7 +74,7 @@ footer {
 
 .products-title {
 	@extend .section-title;
-	color: $gray-700;
+	color: $gray-600;
 }
 
 @each $name, $color in $palette {
@@ -84,9 +85,9 @@ footer {
 		} @else if ($name == light-dark) {
 			color: $gray-100;
 		} @else if ($name == gray){
-			color: $gray-800;
+			color: $white;
 		} @else if($name == light-gray){
-			color: $gray-800;
+			color: $gray-700;
 		} @else {
 			color: $black;
 		}
