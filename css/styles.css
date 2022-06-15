@@ -45,6 +45,11 @@ footer p {
 footer h5 {
   color: #343a40; }
 
+.card-title {
+  font-weight: normal;
+  font-style: normal;
+  color: #343a40; }
+
 .section-title, .products-title {
   text-align: center;
   font-weight: normal;
