@@ -9,12 +9,40 @@
 	width: 3em;
 }
 
+// Set portada img background
 .portada {
 	height: 80vh;
-	background-image: url("../img/cover-2.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	@include image__background(url("../img/cover-2.jpg"));
+}
+
+// Apply img background with filter
+.img-background {
+	height: 50vh;
+	position: relative;
+	z-index: 1;
+}
+
+.img-background::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	@include image__background(url("../img/pcb.jpg"));
+	filter: opacity(1);
+}
+
+// Set contact form img background
+.contact {
+	// @include image__background(url("../img/steve-quote.jpg"));
+	@include image__background(url("../img/contact-2.jpg"));
+}
+
+.transparent {
+	color: $white;
+	text-shadow: 5px 5px 10px $black;
 }
 
 .sideText {
