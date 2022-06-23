@@ -8,25 +8,6 @@
   background-position: center;
   background-size: cover; }
 
-.img-background {
-  height: 50vh;
-  position: relative;
-  z-index: 1; }
-
-.img-background::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-image: url("../img/pcb.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  filter: opacity(1); }
-
 .contact {
   background-image: url("../img/contact-2.jpg");
   background-repeat: no-repeat;
