@@ -1,3 +1,10 @@
+// Mixin to set an image as background on section
+@mixin image__background($url){
+	background-image: $url;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 
 // Mixin to set font size and line_height
 @mixin resposive__font($size, $line_height) {
