@@ -8,6 +8,16 @@
   background-position: center;
   background-size: cover; }
 
+.contact {
+  background-image: url("../img/contact-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.transparent {
+  color: #fff;
+  text-shadow: 5px 5px 10px #000; }
+
 .sideText, .product-text, .empresa-text {
   font-size: 1em;
   font-style: italic;
@@ -27,22 +37,28 @@
   line-height: 1.5em; }
 
 footer .nav a {
-  color: #6c757d; }
+  color: #495057; }
 
 footer .nav a:hover {
   color: #000; }
 
 footer .nav li {
-  color: #6c757d; }
+  color: #495057; }
 
 footer .nav li:hover {
-  color: #6c757d; }
+  color: #495057; }
 
 footer p {
-  font-size: 0.7em; }
+  font-size: 0.7em;
+  color: #343a40; }
 
 footer h5 {
-  color: #495057; }
+  color: #343a40; }
+
+.card-title {
+  font-weight: normal;
+  font-style: normal;
+  color: #343a40; }
 
 .section-title, .products-title {
   text-align: center;
@@ -50,7 +66,7 @@ footer h5 {
   font-style: normal; }
 
 .products-title {
-  color: #495057; }
+  color: #6c757d; }
 
 .colors-dark {
   background-color: #212529;
@@ -74,7 +90,7 @@ footer h5 {
 
 .colors-gray {
   background-color: #e9ecef;
-  color: #343a40; }
+  color: #fff; }
 
 .link-gray {
   text-decoration: none;
@@ -84,7 +100,7 @@ footer h5 {
 
 .colors-light-gray {
   background-color: #f8f9fa;
-  color: #343a40; }
+  color: #495057; }
 
 .link-light-gray {
   text-decoration: none;

@@ -9,12 +9,20 @@
 	width: 3em;
 }
 
+// Set portada img background
 .portada {
 	height: 80vh;
-	background-image: url("../img/cover-2.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	@include image__background(url("../img/cover-2.jpg"));
+}
+
+// Set contact form img background
+.contact {
+	@include image__background(url("../img/contact-2.jpg"));
+}
+
+.transparent {
+	color: $white;
+	text-shadow: 5px 5px 10px $black;
 }
 
 .sideText {
@@ -44,25 +52,32 @@
 footer {
 	.nav {
 		a {
-			color: $gray-600;
+			color: $gray-700;
 		}
 		a:hover {
 			color: $black;
 		}
 		li {
-			color: $gray-600;
+			color: $gray-700;
 		}
 		li:hover {
-			color: $gray-600;
+			color: $gray-700;
 		}
 	}
 	p {
 		font-size: 0.7em;
+		color: $gray-800;
 	}
 	h5 {
-		color: $gray-700;
+		color: $gray-800;
 	}
 
+}
+
+.card-title {
+	font-weight: normal;
+	font-style: normal;
+	color: $gray-800;
 }
 
 .section-title {
@@ -73,7 +88,7 @@ footer {
 
 .products-title {
 	@extend .section-title;
-	color: $gray-700;
+	color: $gray-600;
 }
 
 @each $name, $color in $palette {
@@ -84,9 +99,9 @@ footer {
 		} @else if ($name == light-dark) {
 			color: $gray-100;
 		} @else if ($name == gray){
-			color: $gray-800;
+			color: $white;
 		} @else if($name == light-gray){
-			color: $gray-800;
+			color: $gray-700;
 		} @else {
 			color: $black;
 		}
